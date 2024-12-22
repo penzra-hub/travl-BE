@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "anXycHPbsek=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Travl.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Decagon Laptop\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\Decagon Laptop\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Decagon Laptop\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
