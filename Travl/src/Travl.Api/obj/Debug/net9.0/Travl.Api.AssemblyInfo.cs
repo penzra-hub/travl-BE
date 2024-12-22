@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Travl.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3acf1b52f07a94bce6de285e162c0fd823b24e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+489bf8e0e784eb1984712bbb621308eb778334eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Travl.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Travl.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
