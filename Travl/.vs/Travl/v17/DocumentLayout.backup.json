@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 110,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Travl.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T09:27:24.897Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

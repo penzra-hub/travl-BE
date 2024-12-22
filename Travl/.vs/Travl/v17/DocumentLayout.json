@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03E5DA2E-A2B9-4A76-8DD5-4CB84C447DF9}|tests\\Travl.UnitTests\\Travl.UnitTests.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\tests\\travl.unittests\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E5DA2E-A2B9-4A76-8DD5-4CB84C447DF9}|tests\\Travl.UnitTests\\Travl.UnitTests.csproj|solutionrelative:tests\\travl.unittests\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\travl.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\travl.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Travl.Application\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\tests\\Travl.UnitTests\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "tests\\Travl.UnitTests\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\tests\\Travl.UnitTests\\GlobalUsings.cs",
+              "RelativeToolTip": "tests\\Travl.UnitTests\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:27:24.897Z",
+              "WhenOpened": "2024-12-22T10:06:43.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Travl.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-22T10:03:30.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T10:02:26.64Z",
               "EditorCaption": ""
             },
             {
@@ -44,6 +82,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:77623829:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Travl.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T09:27:24.897Z",
+              "EditorCaption": ""
             }
           ]
         }

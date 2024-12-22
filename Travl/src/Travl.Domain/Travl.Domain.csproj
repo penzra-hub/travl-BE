@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Commons\" />
+    <Folder Include="Context\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Enums\" />
+    <Folder Include="DomainServices\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
