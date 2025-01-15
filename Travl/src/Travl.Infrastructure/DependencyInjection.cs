@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Travl.Application.Interfaces;
+using Travl.Domain.Commons;
 using Travl.Infrastructure.Commons;
 using Travl.Infrastructure.Implementations;
 
@@ -13,7 +14,15 @@ namespace Travl.Infrastructure
     {
         public static void ConfigureInfraStructure(this IServiceCollection services, IConfiguration configuration)
         {
+            #region Register Interface Services
+
             services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<IUserValidationService,  UserValidationService>();
+
+            #endregion
+
+            #region Register External Services
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -43,6 +52,19 @@ namespace Travl.Infrastructure
                 c.AddPolicy(Policies.Admin, Policies.AdminPolicy());
                 c.AddPolicy(Policies.DriverManager, Policies.DriverManagerPolicy());
             });
+
+            #endregion
+
+            #region Register App Services
+
+            //Hashing Settings 
+            var hashingConfiguration = new HashingSettings()
+            {
+                SecretKey = configuration["HashingSettings:SecretKey"]
+            };
+
+            #endregion
+
         }
     }
 }

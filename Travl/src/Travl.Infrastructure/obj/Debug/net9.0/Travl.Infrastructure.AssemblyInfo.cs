@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Travl.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c892d4c493ab91fa6b2ee60d3e405c8db0cb6fb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fed5d79121671d6ad41d4728bc846519a7abe2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Travl.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Travl.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
