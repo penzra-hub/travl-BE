@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Travl.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+489bf8e0e784eb1984712bbb621308eb778334eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c892d4c493ab91fa6b2ee60d3e405c8db0cb6fb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Travl.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Travl.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

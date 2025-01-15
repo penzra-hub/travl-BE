@@ -1,0 +1,15 @@
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\bin\Debug\net9.0\Travl.Domain.deps.json
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\bin\Debug\net9.0\Travl.Domain.runtimeconfig.json
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\bin\Debug\net9.0\Travl.Domain.dll
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\bin\Debug\net9.0\Travl.Domain.pdb
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.csproj.AssemblyReference.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.AssemblyInfoInputs.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.AssemblyInfo.cs
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.sourcelink.json
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.dll
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\refint\Travl.Domain.dll
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.pdb
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\Travl.Domain.genruntimeconfig.cache
+C:\Users\Decagon Laptop\OneDrive\Documents\Codes\Projects\Professional\Travl\travl-BE\Travl\src\Travl.Domain\obj\Debug\net9.0\ref\Travl.Domain.dll

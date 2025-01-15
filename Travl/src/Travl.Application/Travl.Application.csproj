@@ -8,9 +8,17 @@
 
   <ItemGroup>
     <Folder Include="Authentication\Registration\" />
-    <Folder Include="Common\" />
     <Folder Include="Users\Commands\" />
     <Folder Include="Users\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.Results" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travl.Domain\Travl.Domain.csproj" />
   </ItemGroup>
 
 </Project>

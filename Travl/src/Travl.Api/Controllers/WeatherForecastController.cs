@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Travl.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [AllowAnonymous]
+    public class WeatherForecastController : ApiController
     {
         private static readonly string[] Summaries = new[]
         {
