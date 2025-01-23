@@ -2,6 +2,7 @@ using Travl.Api.Extensions;
 using Travl.Application;
 using Travl.Application.Common.Extensions;
 using Travl.Infrastructure;
+using Travl.Infrastructure.Seeder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,8 @@ app.UseDeveloperExceptionPage();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseStaticFiles();
+
+await SeederClass.SeedData(app);
 
 app.UseCors("AllowAllOrigins");
 
