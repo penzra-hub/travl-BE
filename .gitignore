@@ -1,6 +1,14 @@
 
 *.vsidx
-/Travl/src/Travl.Domain/obj/Debug/net9.0
 *.testlog
-/Travl/.vs/Travl/v17/TestStore/0
-/Travl/.vs/Travl/v17
+/Travl/.vs
+/Travl/src/Travl.Api/bin
+/Travl/src/Travl.Api/obj
+/Travl/src/Travl.Application/bin
+/Travl/src/Travl.Application/obj
+/Travl/src/Travl.Domain/bin
+/Travl/src/Travl.Domain/obj
+/Travl/src/Travl.Infrastructure/bin
+/Travl/src/Travl.Infrastructure/obj
+/Travl/tests/Travl.UnitTests/bin
+/Travl/tests/Travl.UnitTests/obj
