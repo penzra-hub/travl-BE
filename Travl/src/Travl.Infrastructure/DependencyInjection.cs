@@ -19,6 +19,7 @@ namespace Travl.Infrastructure
             services.AddTransient<ITokenService, TokenService>();
             services.AddTransient<IUserValidationService,  UserValidationService>();
             services.AddTransient<ICurrentUserService, CurrentUserService>();
+            services.AddScoped<IPaginationHelper, PaginationHelper>();
                 
             #endregion
 

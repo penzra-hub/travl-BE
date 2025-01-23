@@ -15,6 +15,7 @@ namespace Travl.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidatorBehavior<,>));
+            services.AddHttpContextAccessor();
         }
 
     }
