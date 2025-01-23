@@ -3,44 +3,196 @@
   "WorkspaceRootPath": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250115091657_V1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Travl.Domain\\Migrations\\20250115091657_V1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250123124509_V2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Travl.Domain\\Migrations\\20250123124509_V2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\passenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\verificationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\verificationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\userverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\userverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\ridestop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\ridestop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\promocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\promocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\ridetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\ridetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\identificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\identificationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\recepientaccounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\recepientaccounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\paginationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\paginationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\extensions\\appservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\extensions\\appservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\extensions\\identityserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\extensions\\identityserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\interfaces\\icurrentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\interfaces\\icurrentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\hashingsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\hashingsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\extensions\\dbregistryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\extensions\\dbregistryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\stringhashingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\stringhashingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\interfaces\\istringhashingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\interfaces\\istringhashingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\utility\\tokenbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\utility\\tokenbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\commons\\policies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\commons\\policies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\uservalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\uservalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\extensions\\appservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\extensions\\appservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\interfaces\\iuservalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\interfaces\\iuservalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\extensions\\dbregistryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\extensions\\dbregistryextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\commons\\policies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\commons\\policies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +207,6 @@
       "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\context\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E9D2BDB4-3EFF-452D-9611-33486047DD20}|src\\Travl.Api\\Travl.Api.csproj|solutionrelative:src\\travl.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -68,10 +216,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.application\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\authtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,40 +230,12 @@
       "RelativeMoniker": "D:0:0:{C25D437A-D11E-49DD-922F-A06ABA365607}|src\\Travl.Application\\Travl.Application.csproj|solutionrelative:src\\travl.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\accesslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\travl.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\travl.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.domain\\commons\\logindetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8AF8206-4F5D-4604-B6A6-248669BF94F5}|src\\Travl.Domain\\Travl.Domain.csproj|solutionrelative:src\\travl.domain\\commons\\logindetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\implementations\\paginationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|solutionrelative:src\\travl.infrastructure\\implementations\\paginationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9783847D-27A0-477E-8B0B-0ECDD273FED4}|src\\Travl.Infrastructure\\Travl.Infrastructure.csproj|c:\\users\\decagon laptop\\onedrive\\documents\\codes\\projects\\professional\\travl\\travl-be\\travl\\src\\travl.infrastructure\\travl.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -169,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 52,
               "Title": "PortableThreadPool.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\AppData\\Local\\Temp\\.vsdbgsrc\\287a71f6fd4eb2e1c00f76bb2d3d76ef243545a5e78cfed735dee62a3b66f13b\\PortableThreadPool.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\287a71f6fd4eb2e1c00f76bb2d3d76ef243545a5e78cfed735dee62a3b66f13b\\PortableThreadPool.cs",
@@ -178,20 +294,227 @@
               "ViewState": "AgIAAD8EAAAAAAAAAIAxwHwEAAAfAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T11:27:01.369Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VerificationStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\VerificationStatus.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\VerificationStatus.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\VerificationStatus.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\VerificationStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:00:20.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250115091657_V1.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250115091657_V1.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Migrations\\20250115091657_V1.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250115091657_V1.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Migrations\\20250115091657_V1.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBgAAABCAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Context\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Context\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Context\\ApplicationContext.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Context\\ApplicationContext.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAwFAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T09:16:57.715Z",
+              "WhenOpened": "2025-01-11T09:38:43.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserVerification.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\UserVerification.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\UserVerification.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\UserVerification.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\UserVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:06:03.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\AppUser.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\AppUser.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA8wBwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:16:32.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\BaseEntity.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Commons\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T09:57:56.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Payment.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Payment.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:58:52.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Wallet.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Wallet.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Wallet.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Wallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:01:24.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Vehicle.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Vehicle.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:04:14.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RideStop.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\RideStop.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\RideStop.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\RideStop.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\RideStop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:09:57.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Review.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Review.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:12:43.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PromoCode.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\PromoCode.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\PromoCode.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\PromoCode.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\PromoCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:14:33.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Notification.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:13:59.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Status.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\Status.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Status.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:27:20.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TransactionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\TransactionStatus.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\TransactionStatus.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\TransactionStatus.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\TransactionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:15:16.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RideType.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\RideType.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\RideType.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\RideType.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\RideType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:17:53.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\BookingStatus.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\BookingStatus.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\BookingStatus.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\BookingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T11:16:55.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IdentificationType.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\IdentificationType.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\IdentificationType.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\IdentificationType.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\IdentificationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:09:37.554Z",
               "EditorCaption": ""
             },
             {
@@ -208,358 +531,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IdentityServiceExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
-              "RelativeToolTip": "src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T09:08:02.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Program.cs",
-              "RelativeToolTip": "src\\Travl.Api\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:55:52.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.json",
-              "RelativeToolTip": "src\\Travl.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-11T10:06:49.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Travl.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T10:02:26.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TokenBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
-              "RelativeToolTip": "src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:12:51.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
-              "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAkwJEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:20:51.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DBRegistryExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
-              "RelativeToolTip": "src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:41:49.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppServicesExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
-              "RelativeToolTip": "src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:25:51.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Policies.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Commons\\Policies.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Commons\\Policies.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Commons\\Policies.cs",
-              "RelativeToolTip": "src\\Travl.Infrastructure\\Commons\\Policies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:58:12.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:52:02.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\WeatherForecast.cs",
-              "RelativeToolTip": "src\\Travl.Api\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:53:29.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\ITokenService.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "src\\Travl.Application\\Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:15:14.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "src\\Travl.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-15T08:35:00.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Context\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Context\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Context\\ApplicationContext.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Context\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:38:43.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.Development.json",
-              "RelativeToolTip": "src\\Travl.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-11T09:48:49.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\BaseEntity.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Commons\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:57:56.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AuthToken.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\AuthToken.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\AuthToken.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\AuthToken.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Commons\\AuthToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:17:07.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Gender.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\Gender.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Gender.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Enums\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:26:10.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Travl.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Travl.Api.csproj",
-              "RelativeDocumentMoniker": "src\\Travl.Api\\Travl.Api.csproj",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Travl.Api.csproj",
-              "RelativeToolTip": "src\\Travl.Api\\Travl.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-06T10:34:22.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Status.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\Status.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Status.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Enums\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:27:20.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Travl.Application\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T09:27:24.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Travl.Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Travl.Domain.csproj",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Travl.Domain.csproj",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Travl.Domain.csproj",
-              "RelativeToolTip": "src\\Travl.Domain\\Travl.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-06T11:08:39.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AccessLevel.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\AccessLevel.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\AccessLevel.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\AccessLevel.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Enums\\AccessLevel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:28:21.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\AppUser.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Entities\\AppUser.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAzwBkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:16:32.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\UserType.cs",
               "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\UserType.cs",
               "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\UserType.cs",
               "RelativeToolTip": "src\\Travl.Domain\\Enums\\UserType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T11:29:20.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\RefreshToken.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\RefreshToken.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Commons\\RefreshToken.cs",
+              "DocumentIndex": 25,
+              "Title": "RecepientAccountType.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\RecepientAccountType.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\RecepientAccountType.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\RecepientAccountType.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\RecepientAccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:24:39.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\PaymentStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:19:15.251Z",
+              "WhenOpened": "2025-01-16T14:01:43.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:01:15.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "LoginDetails.cs",
-              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\LoginDetails.cs",
-              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\LoginDetails.cs",
-              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\LoginDetails.cs",
-              "RelativeToolTip": "src\\Travl.Domain\\Commons\\LoginDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Gender.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\Gender.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\Gender.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:18:38.074Z",
+              "WhenOpened": "2025-01-06T11:26:10.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "AccessLevel.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\AccessLevel.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\AccessLevel.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\AccessLevel.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\AccessLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:28:21.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "PaginationHelper.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\PaginationHelper.cs",
               "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\PaginationHelper.cs",
@@ -567,12 +617,335 @@
               "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\PaginationHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:07:08.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T11:07:08.179Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:20:51.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AppServicesExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
+              "RelativeToolTip": "src\\Travl.Api\\Extensions\\AppServicesExtension.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:25:51.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IdentityServiceExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
+              "RelativeToolTip": "src\\Travl.Api\\Extensions\\IdentityServiceExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:08:02.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\RefreshToken.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Commons\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:19:15.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CurrentUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\CurrentUserService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\CurrentUserService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\CurrentUserService.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\CurrentUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:29:44.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ICurrentUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ICurrentUserService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\ICurrentUserService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ICurrentUserService.cs",
+              "RelativeToolTip": "src\\Travl.Application\\Interfaces\\ICurrentUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:28:58.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "HashingSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\HashingSettings.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\HashingSettings.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\HashingSettings.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Commons\\HashingSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:42:27.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\UserValidationService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\UserValidationService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\UserValidationService.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\UserValidationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:35:05.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T10:02:26.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.json",
+              "RelativeToolTip": "src\\Travl.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T10:06:49.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IStringHashingService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\IStringHashingService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\IStringHashingService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\IStringHashingService.cs",
+              "RelativeToolTip": "src\\Travl.Application\\Interfaces\\IStringHashingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:40:28.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "StringHashingService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\StringHashingService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Implementations\\StringHashingService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Implementations\\StringHashingService.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Implementations\\StringHashingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:41:10.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IUserValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\IUserValidationService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\IUserValidationService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\IUserValidationService.cs",
+              "RelativeToolTip": "src\\Travl.Application\\Interfaces\\IUserValidationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:34:40.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TokenBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Utility\\TokenBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:12:51.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Program.cs",
+              "RelativeToolTip": "src\\Travl.Api\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T10:55:52.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DBRegistryExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
+              "RelativeToolTip": "src\\Travl.Api\\Extensions\\DBRegistryExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T09:41:49.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Policies.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Commons\\Policies.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Commons\\Policies.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Commons\\Policies.cs",
+              "RelativeToolTip": "src\\Travl.Infrastructure\\Commons\\Policies.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:58:12.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "src\\Travl.Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T10:52:02.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\WeatherForecast.cs",
+              "RelativeToolTip": "src\\Travl.Api\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T10:53:29.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "src\\Travl.Application\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:15:14.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\Travl.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T08:35:00.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\appsettings.Development.json",
+              "RelativeToolTip": "src\\Travl.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T09:48:49.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AuthToken.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\AuthToken.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\AuthToken.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\AuthToken.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Commons\\AuthToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:17:07.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Travl.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Travl.Api.csproj",
+              "RelativeDocumentMoniker": "src\\Travl.Api\\Travl.Api.csproj",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Travl.Api.csproj",
+              "RelativeToolTip": "src\\Travl.Api\\Travl.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-06T10:34:22.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Travl.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T09:27:24.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Travl.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Travl.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Travl.Domain.csproj",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Travl.Domain.csproj",
+              "RelativeToolTip": "src\\Travl.Domain\\Travl.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-06T11:08:39.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "LoginDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\LoginDetails.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Commons\\LoginDetails.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Commons\\LoginDetails.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Commons\\LoginDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:18:38.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
               "Title": "IPaginationHelper.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Interfaces\\IPaginationHelper.cs",
               "RelativeDocumentMoniker": "src\\Travl.Application\\Interfaces\\IPaginationHelper.cs",
@@ -580,12 +953,11 @@
               "RelativeToolTip": "src\\Travl.Application\\Interfaces\\IPaginationHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T11:04:48.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T11:04:48.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 59,
               "Title": "Travl.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
               "RelativeDocumentMoniker": "src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
@@ -593,12 +965,11 @@
               "RelativeToolTip": "src\\Travl.Infrastructure\\Travl.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-22T10:03:30.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T10:03:30.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 61,
               "Title": "Travl.Application.csproj",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Travl.Application.csproj",
               "RelativeDocumentMoniker": "src\\Travl.Application\\Travl.Application.csproj",
@@ -606,12 +977,11 @@
               "RelativeToolTip": "src\\Travl.Application\\Travl.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-06T10:46:59.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T10:46:59.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 64,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Common\\Constants.cs",
               "RelativeDocumentMoniker": "src\\Travl.Application\\Common\\Constants.cs",
@@ -619,12 +989,11 @@
               "RelativeToolTip": "src\\Travl.Application\\Common\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:48:24.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T10:48:24.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 63,
               "Title": "AppLoggerFactory.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Common\\Extensions\\AppLoggerFactory.cs",
               "RelativeDocumentMoniker": "src\\Travl.Application\\Common\\Extensions\\AppLoggerFactory.cs",
@@ -632,12 +1001,11 @@
               "RelativeToolTip": "src\\Travl.Application\\Common\\Extensions\\AppLoggerFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:42:41.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T10:42:41.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 65,
               "Title": "ForbiddenAccessException.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Application\\Common\\Exceptions\\ForbiddenAccessException.cs",
               "RelativeDocumentMoniker": "src\\Travl.Application\\Common\\Exceptions\\ForbiddenAccessException.cs",
@@ -645,12 +1013,11 @@
               "RelativeToolTip": "src\\Travl.Application\\Common\\Exceptions\\ForbiddenAccessException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:41:08.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T10:41:08.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 62,
               "Title": "ApiController.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Api\\Controllers\\ApiController.cs",
               "RelativeDocumentMoniker": "src\\Travl.Api\\Controllers\\ApiController.cs",
@@ -658,12 +1025,11 @@
               "RelativeToolTip": "src\\Travl.Api\\Controllers\\ApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T10:25:46.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T10:25:46.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 66,
               "Title": "GlobalUsings.cs",
               "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\tests\\Travl.UnitTests\\GlobalUsings.cs",
               "RelativeDocumentMoniker": "tests\\Travl.UnitTests\\GlobalUsings.cs",
@@ -671,7 +1037,103 @@
               "RelativeToolTip": "tests\\Travl.UnitTests\\GlobalUsings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T10:06:43.758Z",
+              "WhenOpened": "2024-12-22T10:06:43.758Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250123124509_V2.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250123124509_V2.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Migrations\\20250123124509_V2.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Migrations\\20250123124509_V2.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Migrations\\20250123124509_V2.cs",
+              "ViewState": "AgIAAPkDAAAAAAAAAAAIwAMEAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T12:45:10.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Booking.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:47:53.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\TransactionType.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Enums\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Enums\\TransactionType.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Enums\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:13:09.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Passenger.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Passenger.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Passenger.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Passenger.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Passenger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:44:13.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Driver.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Driver.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Driver.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Driver.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Driver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:39:34.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Transaction.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T09:12:06.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ride.cs",
+              "DocumentMoniker": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Ride.cs",
+              "RelativeDocumentMoniker": "src\\Travl.Domain\\Entities\\Ride.cs",
+              "ToolTip": "C:\\Users\\Decagon Laptop\\OneDrive\\Documents\\Codes\\Projects\\Professional\\Travl\\travl-BE\\Travl\\src\\Travl.Domain\\Entities\\Ride.cs",
+              "RelativeToolTip": "src\\Travl.Domain\\Entities\\Ride.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T13:45:36.126Z",
               "EditorCaption": ""
             }
           ]

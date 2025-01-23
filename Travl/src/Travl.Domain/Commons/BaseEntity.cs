@@ -5,7 +5,7 @@ namespace Travl.Domain.Commons
 {
     public abstract class BaseEntity
     {
-        [Key] public string Id { get; set; }
+        [Key] public string? Id { get; set; }
         public bool IsDeleted { get; set; }
         public string? CreatedBy { get; set; }
         public Status? Status { get; set; }
