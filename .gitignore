@@ -1,2 +1,3 @@
 
 *.vsidx
+/Travl/src/Travl.Domain/obj/Debug/net9.0
