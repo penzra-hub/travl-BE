@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System.Reflection;
 using Travl.Domain.Enums;
 
 namespace Travl.Domain.Entities
 {
     public class AppUser : IdentityUser
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
         public string Name => FirstName + " " + LastName;
         public Gender Gender { get; set; }
         public bool IsActive { get; set; }
@@ -22,11 +21,13 @@ namespace Travl.Domain.Entities
         public string StatusDesc => Status.ToString();
         public DateTime LastLoginDate { get; set; }
         public string? Token { get; set; }
+        public bool IsTokenValid { get; set; }
         public AccessLevel AccessLevel { get; set; } = AccessLevel.User;
         public string AccessLevelDesc => AccessLevel.ToString();
         public string? Otp { get; set; }
         public DateTime OtpExpiration { get; set; }
         public UserType UserType { get; set; }
         public int LoginCount { get; set; } = 0;
+
     }
 }

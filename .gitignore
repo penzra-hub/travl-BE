@@ -1,4 +1,5 @@
 
 *.vsidx
+/Travl/src/Travl.Domain/obj/Debug/net9.0
 *.testlog
 /Travl/.vs/Travl/v17/TestStore/0
