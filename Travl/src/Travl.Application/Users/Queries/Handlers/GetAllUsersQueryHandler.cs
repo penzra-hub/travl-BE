@@ -4,10 +4,11 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Travl.Application.Interfaces;
+using Travl.Application.Users.Queries.GetAllUsers;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Users.Queries.GetAllUsers
+namespace Travl.Application.Users.Queries.Handlers
 {
     internal sealed class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, PaginatedResult<GetUsersResponse>>
     {
@@ -36,8 +37,8 @@ namespace Travl.Application.Users.Queries.GetAllUsers
             var pageSize = request.PageSize ?? 10;   // Default to 10 items per page
 
             query = query
-                .Skip((int)((pageNumber - 1) * pageSize))
-                .Take((int)pageSize);
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize);
 
             foreach (var user in query)
             {

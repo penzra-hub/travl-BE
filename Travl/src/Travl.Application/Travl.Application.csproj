@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Authentication\Registration\" />
-    <Folder Include="Users\Commands\" />
+    <Folder Include="Users\Commands\Handlers\" />
+    <Folder Include="Users\Commands\CommandValidators\" />
+    <Folder Include="Users\Queries\QueryValidators\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Travl.Application.Users.Queries;
 using Travl.Application.Users.Queries.GetAllUsers;
-using Travl.Application.Users.Queries.GetUser;
 using Travl.Domain.Enums;
 using Travl.Infrastructure.Utility;
 

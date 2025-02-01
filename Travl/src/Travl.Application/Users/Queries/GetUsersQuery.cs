@@ -1,7 +1,7 @@
 ﻿using AspNetCoreHero.Results;
 using MediatR;
 
-namespace Travl.Application.Users.Queries.GetUser
+namespace Travl.Application.Users.Queries
 {
     public record GetUsersQuery(
         string UserId,

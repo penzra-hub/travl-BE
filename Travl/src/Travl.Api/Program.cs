@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Travl.Api.Extensions;
 using Travl.Application;
 using Travl.Application.Common.Extensions;
@@ -19,11 +20,14 @@ builder.Services.ConfigureInfraStructure(builder.Configuration);
 builder.Services.AddDbContextAndConfigurations(builder.Configuration);
 builder.Services.ConfigureIdentity();
 
-builder.Services.AddControllers().AddJsonOptions(options =>
+builder.Services.ConfigureAppServices();
+
+builder.Services.AddControllers()
+.AddJsonOptions(options =>
 {
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
-builder.Services.ConfigureAppServices();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
