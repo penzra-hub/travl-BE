@@ -15,7 +15,7 @@ builder.Logging.ClearProviders();
 
 // Add services to the container.
 builder.Services.ConfigureApplication(builder.Configuration);
-builder.Services.ConfigureInfraStructure(builder.Configuration);
+builder.Services.ConfigureInfraStructure(builder.Configuration, builder.Environment);
 builder.Services.AddDbContextAndConfigurations(builder.Configuration);
 builder.Services.ConfigureIdentity();
 
