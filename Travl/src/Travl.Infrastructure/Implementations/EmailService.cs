@@ -45,6 +45,28 @@ namespace Travl.Infrastructure.Implementations
 
             var builder = new BodyBuilder();
 
+            // Attach Images as Linked Resources
+            //var logoPath = Path.Combine(_appSettings.WebRootPath, "assets", "travl-logo.png");
+            var instagramPath = Path.Combine(_appSettings.WebRootPath, "assets", "square-instagram-brands-solid.png");
+            var linkedinPath = Path.Combine(_appSettings.WebRootPath, "assets", "linkedin-brands-solid.png");
+            var facebookPath = Path.Combine(_appSettings.WebRootPath, "assets", "facebook-brands-solid.png");
+            var twitterPath = Path.Combine(_appSettings.WebRootPath, "assets", "twitter-brands-solid.png");
+
+            //var logo = builder.LinkedResources.Add(logoPath);
+            //logo.ContentId = "travl-logo";
+
+            var instagramIcon = builder.LinkedResources.Add(instagramPath);
+            instagramIcon.ContentId = "instagram-icon";
+
+            var linkedinIcon = builder.LinkedResources.Add(linkedinPath);
+            linkedinIcon.ContentId = "linkedin-icon";
+
+            var facebookIcon = builder.LinkedResources.Add(facebookPath);
+            facebookIcon.ContentId = "facebook-icon";
+
+            var twitterIcon = builder.LinkedResources.Add(twitterPath);
+            twitterIcon.ContentId = "twitter-icon";
+
             if (emailVm.Attachments != null)
             {
                 foreach (var file in emailVm.Attachments.Where(file => file.Length > 0))

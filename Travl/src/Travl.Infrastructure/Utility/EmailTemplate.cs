@@ -99,7 +99,7 @@
                         <div class='email-container'>
                             <!-- Logo -->
                             <div class='logo'>
-                                <img src='cid:Travl-logo' alt='Travl Logo' />
+                                <img src='cid:travl-logo' alt='Travl Logo' />
                             </div>
 
                             <!-- Email Content -->
