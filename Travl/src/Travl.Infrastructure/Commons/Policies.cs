@@ -7,6 +7,8 @@ namespace Travl.Infrastructure.Commons
         public const string Admin = "Admin";
         public const string SuperAdmin = "SuperAdmin";
         public const string DriverManager = "DriverManager";
+        public const string Passenger = "Passenger";
+        public const string Driver = "Driver";
 
         public static AuthorizationPolicy AdminPolicy()
         {
@@ -21,6 +23,16 @@ namespace Travl.Infrastructure.Commons
         public static AuthorizationPolicy DriverManagerPolicy()
         {
             return new AuthorizationPolicyBuilder().RequireAuthenticatedUser().RequireRole(DriverManager).Build();
+        }
+
+        public static AuthorizationPolicy PassengerPolicy()
+        {
+            return new AuthorizationPolicyBuilder().RequireAuthenticatedUser().RequireRole(Passenger).Build();
+        }
+
+        public static AuthorizationPolicy DriverPolicy()
+        {
+            return new AuthorizationPolicyBuilder().RequireAuthenticatedUser().RequireRole(Driver).Build();
         }
     }
 }

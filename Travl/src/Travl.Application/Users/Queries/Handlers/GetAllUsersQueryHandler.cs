@@ -27,28 +27,38 @@ namespace Travl.Application.Users.Queries.Handlers
 
         public async Task<PaginatedResult<GetUsersResponse>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
         {
-            var result = new List<GetUsersResponse>();
-            var query = _userManager.Users
-                .Where(x => (x.IsActive || !x.IsDeleted || x.Status != Status.Active) &&
-                            x.UserType == request.UserType);
-
-            // Apply pagination only if PageNumber and PageSize are greater than 0
-            var pageNumber = request.PageNumber ?? 1; // Default to first page
-            var pageSize = request.PageSize ?? 10;   // Default to 10 items per page
-
-            query = query
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize);
-
-            foreach (var user in query)
+            try
             {
-                var userResponse = _mapper.Map<GetUsersResponse>(user);
-                var roles = await _userManager.GetRolesAsync(user);
-                userResponse.Role = roles.FirstOrDefault();
-                result.Add(userResponse);
-            }
+                _logger.LogInformation("Fetching all users with parameters: {@Request}", request);
 
-            return await _pagination.ApplyPaginationAsync(result.AsQueryable(), pageNumber, pageSize, cancellationToken);
+                if (!Enum.IsDefined(typeof(UserType), request.UserType))
+                {
+                    _logger.LogInformation("Invalid User Type provided.");
+                    return PaginatedResult<GetUsersResponse>.Failure(new List<string>
+                    {
+                        "Invalid User Type provided."
+                    });
+                }
+
+                var query = _userManager.Users
+                    .Where(x => (x.IsActive || !x.IsDeleted || x.Status != Status.Active) &&
+                                x.UserType == request.UserType);
+
+                var mappedQuery = query.Select(user => _mapper.Map<GetUsersResponse>(user));
+
+                var paginatedResult = await _pagination.ApplyPaginationAsync(mappedQuery, request.PageNumber, request.PageSize, cancellationToken);
+
+                _logger.LogInformation("Successfully fetched paginated users.");
+                return paginatedResult;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching users: {Message}", ex.Message);
+                return PaginatedResult<GetUsersResponse>.Failure(new List<string>
+                {
+                    "An error occurred while fetching users. Please try again later."
+                });
+            }
         }
     }
 }

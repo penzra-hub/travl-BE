@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -12,15 +13,17 @@ namespace Travl.Infrastructure
 {
     public static class DependencyInjection
     {
-        public static void ConfigureInfraStructure(this IServiceCollection services, IConfiguration configuration)
+        public static void ConfigureInfraStructure(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment env)
         {
             #region Register Interface Services
 
             services.AddTransient<ITokenService, TokenService>();
-            services.AddTransient<IUserValidationService,  UserValidationService>();
+            services.AddTransient<IUserValidationService, UserValidationService>();
             services.AddTransient<ICurrentUserService, CurrentUserService>();
             services.AddScoped<IPaginationHelper, PaginationHelper>();
-                
+            services.AddScoped<IEmailService,  EmailService>();
+            services.AddTransient<IStringHashingService,  StringHashingService>();
+
             #endregion
 
             #region Register External Services
@@ -53,6 +56,8 @@ namespace Travl.Infrastructure
                 c.AddPolicy(Policies.SuperAdmin, Policies.SuperAdminPolicy());
                 c.AddPolicy(Policies.Admin, Policies.AdminPolicy());
                 c.AddPolicy(Policies.DriverManager, Policies.DriverManagerPolicy());
+                c.AddPolicy(Policies.Driver, Policies.DriverPolicy());
+                c.AddPolicy(Policies.Passenger, Policies.PassengerPolicy());
             });
 
             #endregion
@@ -64,6 +69,28 @@ namespace Travl.Infrastructure
             {
                 SecretKey = configuration["HashingSettings:SecretKey"]
             };
+
+            var emailConfiguration = new MailSettings
+            {
+                From = configuration["MailSettings:From"],
+                DisplayName = configuration["MailSettings:DisplayName"],
+                Password = configuration["MailSettings:Password"],
+                Host = configuration["MailSettings:Host"],
+                Port = Convert.ToInt32(configuration["MailSettings:Port"]),
+                UserName = configuration["MailSettings:UserName"],
+                Mail = configuration["MailSettings:Mail"]
+            };
+
+            var appSettings = new AppSettings()
+            {
+                AppName = configuration["AppSettings:AppName"],
+                WebUrl = configuration["AppSettings:WebUrl"],
+                WebRootPath = env.WebRootPath
+            };
+
+            services.AddSingleton(emailConfiguration);
+            services.AddSingleton(appSettings);
+            services.AddSingleton(hashingConfiguration);
 
             #endregion
 
