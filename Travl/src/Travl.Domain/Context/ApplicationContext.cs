@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using System.Reflection.Emit;
 using Travl.Domain.Commons;
 using Travl.Domain.Entities;
 
@@ -127,6 +128,10 @@ namespace Travl.Domain.Context
                 .HasOne(w => w.User)
                 .WithOne()
                 .HasForeignKey<Wallet>(w => w.AppUserId);
+
+            builder.Entity<AppUser>()
+              .Property(u => u.Token)
+              .HasMaxLength(2048);
 
             base.OnModelCreating(builder);
         }

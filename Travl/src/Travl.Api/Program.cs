@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 using System.Text.Json.Serialization;
 using Travl.Api.Extensions;
 using Travl.Application;
 using Travl.Application.Common.Extensions;
+using Travl.Domain.Context;
 using Travl.Infrastructure;
 using Travl.Infrastructure.Seeder;
 
@@ -11,6 +14,11 @@ builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
+
+//builder.Services.AddDbContextPool<ApplicationContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+//});
 
 builder.Logging.ClearProviders();
 
@@ -50,6 +58,7 @@ app.UseStaticFiles();
 await SeederClass.SeedData(app);
 
 app.UseCors("AllowAllOrigins");
+app.UseMiddleware<CustomJwtAuthentication>();
 
 app.UseHttpsRedirection();
 

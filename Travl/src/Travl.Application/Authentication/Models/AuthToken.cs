@@ -1,4 +1,4 @@
-﻿namespace Travl.Application.Authentication.Login
+﻿namespace Travl.Application.Authentication.Models
 {
     public class AuthToken
     {

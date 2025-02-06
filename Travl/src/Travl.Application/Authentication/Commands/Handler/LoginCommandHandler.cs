@@ -3,12 +3,14 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Travl.Application.Authentication.Commands;
+using Travl.Application.Authentication.Models;
 using Travl.Application.Interfaces;
 using Travl.Domain.Context;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Authentication.Login
+namespace Travl.Application.Authentication.Commands.Handler
 {
     public class LoginCommandHandler : IRequestHandler<LoginCommand, IResult<AuthToken>>
     {
@@ -75,6 +77,12 @@ namespace Travl.Application.Authentication.Login
                 await _userManager.ResetAccessFailedCountAsync(user);
 
                 // Increment the login count
+                user.Token = authResult.UserToken;
+                user.IsTokenValid = true;
+                user.RefreshToken = refreshToken.RefreshAccessToken;
+                user.RefreshTokenExpiryTime = DateTime.Now.AddMinutes(30);
+                user.LastLoginDate = DateTime.Now;
+                
                 user.LoginCount++;
                 await _userManager.UpdateAsync(user);
                 await _context.SaveChangesAsync(cancellationToken);
