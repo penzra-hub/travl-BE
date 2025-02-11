@@ -14,7 +14,8 @@ namespace Travl.Api.Controllers
         public AuthenticationController(IMediator mediator)
         {
             _mediator = mediator;
-        }
+        } 
+
         [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
@@ -38,7 +39,25 @@ namespace Travl.Api.Controllers
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("refresh-token")]
-        public async Task<IActionResult> GenerateRefreshToken(LoginCommand command)
+        public async Task<IActionResult> GenerateRefreshToken(RefreshTokenCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
+        }
+
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
+        [HttpPost("activate-account")]
+        public async Task<IActionResult> ActivateAccount(ActivateAccountCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
+        }
+
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
+        [HttpPost("request-activation-token")]
+        public async Task<IActionResult> RequestActivationToken(RequestActivationTokenCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
         }
@@ -47,9 +66,9 @@ namespace Travl.Api.Controllers
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("logout")]
-        public async Task<IActionResult> LoutUser(LoginCommand command)
+        public async Task<IActionResult> LoutUser()
         {
-            return await Initiate(() => Mediator.Send(command));
+            return await Initiate(() => Mediator.Send(new LogoutCommand()));
         }
     }
 }

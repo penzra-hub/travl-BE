@@ -30,8 +30,16 @@ namespace Travl.Api.Extensions
             var userId = context.User.Identity != null ? context.User.Identity.IsAuthenticated ? context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value : null : null;
             //log visits to sme application
             //await _authRepo.LogVisitsAsync(ipAddress, userAgent, userId);
+            var allowedRoutes = new List<string>
+            {
+                "/api/v1/Authentication/login",
+                "/api/v1/Authentication/signup",
+                "/api/v1/HealthCheck/WelcomeEmailTest",
+                "/api/v1/Authentication/request-activation-token",
+                "/api/v1/Authentication/activate-account"
+            };
 
-            if (context.Request.Path == ("/api/v1/Authentication/login") || context.Request.Path == ("/api/v1/Authentication/signup"))
+            if (allowedRoutes.Contains(context.Request.Path))
             {
                 await _next(context);
                 return;
@@ -83,6 +91,7 @@ namespace Travl.Api.Extensions
 
                 var principal = tokenHandler.ValidateToken(token, validationParameters, out _);
                 context.User = principal;
+                context.Items["Email"] = principal.FindFirst("Email")?.Value;
                 //context.Items["UserName"] = principal.FindFirst(JwtRegisteredClaimNames.Name)?.Value;
                 //context.Items["UserRole"] = principal.FindFirst(ClaimTypes.Role)?.Value;
             }

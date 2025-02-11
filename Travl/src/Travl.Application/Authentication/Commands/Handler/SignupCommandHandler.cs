@@ -1,6 +1,8 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -8,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Travl.Application.Common;
+using Travl.Application.Interfaces;
 using Travl.Domain.Commons;
 using Travl.Domain.Context;
 using Travl.Domain.Entities;
@@ -20,11 +23,22 @@ namespace Travl.Application.Authentication.Commands.Handler
         private readonly ApplicationContext _context; 
         private readonly UserManager<AppUser> _userManager;
         private readonly IValidator<SignupCommand> _validator;
-        public SignupCommandHandler(ApplicationContext context, IValidator<SignupCommand> validator, UserManager<AppUser> userManager)
+        private readonly IEmailService _emailService;
+        private readonly ITokenService _tokenService;
+        private readonly ILogger<SignupCommandHandler> _logger;
+        private readonly IStringHashingService _hashingToken;
+        private readonly IConfiguration _configuration;
+        public SignupCommandHandler(ApplicationContext context, IValidator<SignupCommand> validator, UserManager<AppUser> userManager, IEmailService emailService,
+            ITokenService tokenService, ILogger<SignupCommandHandler> logger, IStringHashingService hashingToken, IConfiguration configuration)
         {
             _context = context;
             _validator = validator;
             _userManager = userManager;
+            _emailService = emailService;
+            _tokenService = tokenService;
+            _logger = logger;
+            _hashingToken = hashingToken;
+            _configuration = configuration;
         }
 
         public async Task<ApiResponse<Guid>> Handle(SignupCommand request, CancellationToken cancellationToken)
@@ -38,12 +52,15 @@ namespace Travl.Application.Authentication.Commands.Handler
             }
 
             var user = _context.Users.FirstOrDefault(n => n.Email == request.emailAddress || n.PhoneNumber == request.phoneNumber);
-            if(user != null)
+            if (user != null)
             {
                 response.Message = $"User with Email: {user.Email} or Phone number: {user.PhoneNumber} already exist!";
                 return response;
             }
 
+            //generate otp
+            var otp = _tokenService.GenerateOtp();
+            int otpExpiry = int.Parse(_configuration.GetSection("RefreshTokenConstants")["OTPExpiryInMin"]!);
             //create user
             var newAppUser = new AppUser
             {
@@ -68,19 +85,22 @@ namespace Travl.Application.Authentication.Commands.Handler
                 IsActive = true,
                 LockoutEnabled = true,
                 SecurityStamp = Guid.NewGuid().ToString(),
+                Otp = _hashingToken.CreateAESStringHash(otp),
+                OtpExpiration = DateTime.UtcNow.AddMinutes(otpExpiry),
             };
 
             try
             {
-
+                // send verification mail / sms
+                var sendEmail = await _emailService.SendOtpVerificationEmailAsync(request.emailAddress, request.firstName, otp, otpExpiry.ToString());
                 await _context.Users.AddAsync(newAppUser);
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
+                _logger.LogError($"An error occured here: {ex.Message}");
                 throw;
             }
-            // send verification mail / sms
 
             //return response
             response.isSuccess = true;

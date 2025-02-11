@@ -72,14 +72,14 @@ namespace Travl.Application.Authentication.Commands.Handler
                 authResult.UserToken = await _tokenService.GenerateUserToken(user);
 
                 var refreshToken = await _tokenService.GenerateRefreshToken(request.Email, request.Password);
-                authResult.RefreshToken = refreshToken.RefreshAccessToken;
+                authResult.RefreshToken = refreshToken.AccessToken;
 
                 await _userManager.ResetAccessFailedCountAsync(user);
 
                 // Increment the login count
                 user.Token = authResult.UserToken;
                 user.IsTokenValid = true;
-                user.RefreshToken = refreshToken.RefreshAccessToken;
+                user.RefreshToken = refreshToken.AccessToken;
                 user.RefreshTokenExpiryTime = DateTime.Now.AddMinutes(30);
                 user.LastLoginDate = DateTime.Now;
                 
