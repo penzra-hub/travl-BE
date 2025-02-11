@@ -4,10 +4,11 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Travl.Application.Interfaces;
+using Travl.Application.Users.Queries.GetAllUsers;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Users.Queries.GetAllUsers
+namespace Travl.Application.Users.Queries.Handlers
 {
     internal sealed class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, PaginatedResult<GetUsersResponse>>
     {

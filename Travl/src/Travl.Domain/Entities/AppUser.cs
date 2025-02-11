@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 using Travl.Domain.Enums;
 
 namespace Travl.Domain.Entities
@@ -20,6 +21,7 @@ namespace Travl.Domain.Entities
         public Status Status { get; set; } = Status.Active;
         public string StatusDesc => Status.ToString();
         public DateTime LastLoginDate { get; set; }
+        [MaxLength(2048)]
         public string? Token { get; set; }
         public bool IsTokenValid { get; set; }
         public AccessLevel AccessLevel { get; set; } = AccessLevel.User;

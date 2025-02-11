@@ -12,8 +12,8 @@ using Travl.Domain.Context;
 namespace Travl.Domain.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20250123125337_V1")]
-    partial class V1
+    [Migration("20250206072957_v1")]
+    partial class v1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -284,8 +284,8 @@ namespace Travl.Domain.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Token")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(2048)
+                        .HasColumnType("nvarchar(2048)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");

@@ -9,7 +9,7 @@ using Travl.Domain.Context;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Users.Queries.GetUser
+namespace Travl.Application.Users.Queries.Handlers
 {
     internal sealed class GetUsersQueryHandler : IRequestHandler<GetUsersQuery, IResult<IList<GetUsersResponse>>>
     {
@@ -66,14 +66,14 @@ namespace Travl.Application.Users.Queries.GetUser
                 if (!string.IsNullOrWhiteSpace(request.SearchTerm) && request.Filter != null && request.Filter.Any())
                 {
                     usersQuery = usersQuery.Where(p =>
-                        (request.Filter.Contains("FirstName") &&
-                         EF.Functions.Like(p.FirstName, $"%{request.SearchTerm}%"))
-                        || (request.Filter.Contains("Email") && p.Email != null &&
-                            EF.Functions.Like(p.Email, $"%{request.SearchTerm}%"))
-                        || (request.Filter.Contains("LastName") &&
-                            EF.Functions.Like(p.LastName, $"%{request.SearchTerm}%"))
-                        || (request.Filter.Contains("accessLevel") &&
-                            EF.Functions.Like(p.AccessLevelDesc, $"%{request.SearchTerm}%"))
+                        request.Filter.Contains("FirstName") &&
+                         EF.Functions.Like(p.FirstName, $"%{request.SearchTerm}%")
+                        || request.Filter.Contains("Email") && p.Email != null &&
+                            EF.Functions.Like(p.Email, $"%{request.SearchTerm}%")
+                        || request.Filter.Contains("LastName") &&
+                            EF.Functions.Like(p.LastName, $"%{request.SearchTerm}%")
+                        || request.Filter.Contains("accessLevel") &&
+                            EF.Functions.Like(p.AccessLevelDesc, $"%{request.SearchTerm}%")
                     );
                 }
                 else if (!string.IsNullOrWhiteSpace(request.SearchTerm))
@@ -81,7 +81,7 @@ namespace Travl.Application.Users.Queries.GetUser
                     usersQuery = usersQuery.Where(p =>
                         EF.Functions.Like(p.FirstName, $"%{request.SearchTerm}%") ||
                         EF.Functions.Like(p.LastName, $"%{request.SearchTerm}%") ||
-                        (p.Email != null && EF.Functions.Like(p.Email, $"%{request.SearchTerm}%"))
+                        p.Email != null && EF.Functions.Like(p.Email, $"%{request.SearchTerm}%")
                     );
                 }
 

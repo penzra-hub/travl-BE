@@ -3,7 +3,7 @@ using Travl.Application.Common.Mappings;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Users.Queries
+namespace Travl.Application.Users
 {
     public class GetUsersResponse : IMapFrom<AppUser>
     {

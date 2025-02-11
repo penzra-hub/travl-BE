@@ -7,8 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Authentication\Registration\" />
-    <Folder Include="Users\Commands\" />
+    <Compile Remove="Authentication\Registration\**" />
+    <EmbeddedResource Remove="Authentication\Registration\**" />
+    <None Remove="Authentication\Registration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Authentication\Queries\Handler\" />
+    <Folder Include="Authentication\Queries\QueryValidators\" />
+    <Folder Include="Users\Commands\Handlers\" />
+    <Folder Include="Users\Commands\CommandValidators\" />
+    <Folder Include="Users\Queries\QueryValidators\" />
   </ItemGroup>
 
   <ItemGroup>

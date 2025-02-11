@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using Travl.Application.Interfaces;
 using Travl.Domain.Commons;
@@ -17,6 +18,7 @@ namespace Travl.Infrastructure.Implementations
         private readonly IConfiguration _configuration;
         private readonly ILogger<TokenService> _logger;
         private readonly UserManager<AppUser> _userManager;
+        private static readonly RandomNumberGenerator rng = RandomNumberGenerator.Create();
 
         public TokenService(IConfiguration configuration, ILogger<TokenService> logger,
             UserManager<AppUser> userManager)
@@ -146,7 +148,7 @@ namespace Travl.Infrastructure.Implementations
 
                 var newToken = new RefreshToken()
                 {
-                    RefreshAccessToken = accessToken,
+                    AccessToken = accessToken,
                     ExpiresIn = Convert.ToInt32(_configuration["RefreshTokenConstants:ExpiryInMinutes"])
                 };
 
@@ -157,6 +159,22 @@ namespace Travl.Infrastructure.Implementations
             {
                 throw ex;
             }
+        }
+
+        public string GenerateOtp(int length = 6)
+        {
+            if (length < 4 || length > 10) throw new ArgumentException("OTP length must be between 4 and 10.");
+
+            byte[] randomBytes = new byte[length];
+            rng.GetBytes(randomBytes);
+
+            var otp = new StringBuilder();
+            foreach (byte b in randomBytes)
+            {
+                otp.Append((b % 10).ToString());
+            }
+
+            return otp.ToString();
         }
     }
 }

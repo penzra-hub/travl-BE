@@ -44,5 +44,21 @@ namespace Travl.Infrastructure.Implementations
                 throw;
             }
         }
+
+        public async Task<bool> IsTokenValidAsync(string token)
+        {
+            try
+            {
+                var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Token == token && u.IsTokenValid);
+                if (user == null)
+                    return false;
+                return user.IsTokenValid;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error checking phone number uniqueness");
+                throw;
+            }
+        }
     }
 }
