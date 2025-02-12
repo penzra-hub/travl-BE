@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace Travl.Domain.Migrations
 {
     /// <inheritdoc />
-    public partial class V1 : Migration
+    public partial class v1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -42,7 +43,7 @@ namespace Travl.Domain.Migrations
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     LastLoginDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Token = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Token = table.Column<string>(type: "nvarchar(2048)", maxLength: 2048, nullable: true),
                     IsTokenValid = table.Column<bool>(type: "bit", nullable: false),
                     AccessLevel = table.Column<int>(type: "int", nullable: false),
                     Otp = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),

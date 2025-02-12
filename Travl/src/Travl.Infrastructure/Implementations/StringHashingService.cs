@@ -16,7 +16,7 @@ namespace Travl.Infrastructure.Implementations
             _key = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(_hashingSettings.SecretKey));
         }
 
-        public string CreateDESStringHash(string input)
+        public string CreateAESStringHash(string input)
         {
             using (var aes = Aes.Create())
             {
@@ -30,7 +30,7 @@ namespace Travl.Infrastructure.Implementations
             }
         }
 
-        public string DecodeDESStringHash(string input)
+        public string DecodeAESStringHash(string input)
         {
             try
             {

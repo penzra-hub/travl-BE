@@ -1,6 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+using System.Text.Json.Serialization;
 using Travl.Api.Extensions;
 using Travl.Application;
 using Travl.Application.Common.Extensions;
+using Travl.Domain.Context;
 using Travl.Infrastructure;
 using Travl.Infrastructure.Seeder;
 
@@ -11,6 +15,11 @@ builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
+//builder.Services.AddDbContextPool<ApplicationContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+//});
+
 builder.Logging.ClearProviders();
 
 // Add services to the container.
@@ -19,11 +28,14 @@ builder.Services.ConfigureInfraStructure(builder.Configuration, builder.Environm
 builder.Services.AddDbContextAndConfigurations(builder.Configuration);
 builder.Services.ConfigureIdentity();
 
-builder.Services.AddControllers().AddJsonOptions(options =>
+builder.Services.ConfigureAppServices();
+
+builder.Services.AddControllers()
+.AddJsonOptions(options =>
 {
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 });
-builder.Services.ConfigureAppServices();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -46,6 +58,7 @@ app.UseStaticFiles();
 await SeederClass.SeedData(app);
 
 app.UseCors("AllowAllOrigins");
+app.UseMiddleware<CustomJwtAuthentication>();
 
 app.UseHttpsRedirection();
 

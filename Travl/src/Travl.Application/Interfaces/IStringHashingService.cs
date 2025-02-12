@@ -2,7 +2,7 @@
 {
     public interface IStringHashingService
     {
-        public string CreateDESStringHash(string input);
-        public string DecodeDESStringHash(string input);
+        public string CreateAESStringHash(string input);
+        public string DecodeAESStringHash(string input);
     }
 }

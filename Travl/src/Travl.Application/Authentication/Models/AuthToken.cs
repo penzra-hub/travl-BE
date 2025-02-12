@@ -1,4 +1,4 @@
-﻿namespace Travl.Application.Authentication.Login
+﻿namespace Travl.Application.Authentication.Models
 {
     public class AuthToken
     {
@@ -6,4 +6,6 @@
         public string UserToken { get; set; }
         public string RefreshToken { get; set; }
     }
+
+    
 }
