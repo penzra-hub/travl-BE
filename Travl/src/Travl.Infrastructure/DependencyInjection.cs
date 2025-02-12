@@ -8,6 +8,9 @@ using Travl.Application.Interfaces;
 using Travl.Domain.Commons;
 using Travl.Infrastructure.Commons;
 using Travl.Infrastructure.Implementations;
+using Travl.Application.IRepositories;
+using Travl.Application.Implementation;
+using Travl.Infrastructure.Repositories;
 
 namespace Travl.Infrastructure
 {
@@ -21,8 +24,12 @@ namespace Travl.Infrastructure
             services.AddTransient<IUserValidationService, UserValidationService>();
             services.AddTransient<ICurrentUserService, CurrentUserService>();
             services.AddScoped<IPaginationHelper, PaginationHelper>();
+            services.AddScoped<IDriverService, DriverService>();
             services.AddScoped<IEmailService,  EmailService>();
             services.AddTransient<IStringHashingService,  StringHashingService>();
+            services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+            services.AddScoped<IDriverRepository, DriverRepository>();
+            services.AddScoped<ICloudinaryService, CloudinaryService>();
 
             #endregion
 
@@ -59,6 +66,9 @@ namespace Travl.Infrastructure
                 c.AddPolicy(Policies.Driver, Policies.DriverPolicy());
                 c.AddPolicy(Policies.Passenger, Policies.PassengerPolicy());
             });
+
+
+            services.Configure<CloudinarySettings>(configuration.GetSection("CloudinarySettings"));
 
             #endregion
 
