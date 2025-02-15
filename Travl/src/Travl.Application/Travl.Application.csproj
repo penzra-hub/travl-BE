@@ -15,6 +15,8 @@
   <ItemGroup>
     <Folder Include="Authentication\Queries\Handler\" />
     <Folder Include="Authentication\Queries\QueryValidators\" />
+    <Folder Include="Drivers\Commands\CommandValidators\" />
+    <Folder Include="Drivers\Queries\QueryValidators\" />
     <Folder Include="Users\Commands\Handlers\" />
     <Folder Include="Users\Commands\CommandValidators\" />
     <Folder Include="Users\Queries\QueryValidators\" />

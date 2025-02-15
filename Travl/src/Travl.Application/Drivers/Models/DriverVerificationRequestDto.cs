@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travl.Domain.Enums;
 
-namespace Travl.Application.Dtos.DriverDto
+namespace Travl.Application.Drivers.Models
 {
     public class DriverVerificationRequestDto
     {

@@ -24,7 +24,6 @@ namespace Travl.Infrastructure
             services.AddTransient<IUserValidationService, UserValidationService>();
             services.AddTransient<ICurrentUserService, CurrentUserService>();
             services.AddScoped<IPaginationHelper, PaginationHelper>();
-            services.AddScoped<IDriverService, DriverService>();
             services.AddScoped<IEmailService,  EmailService>();
             services.AddTransient<IStringHashingService,  StringHashingService>();
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
