@@ -80,8 +80,8 @@ namespace Travl.Application.Authentication.Commands.Handler
                 user.Token = authResult.UserToken;
                 user.IsTokenValid = true;
                 user.RefreshToken = refreshToken.AccessToken;
-                user.RefreshTokenExpiryTime = DateTime.Now.AddMinutes(30);
-                user.LastLoginDate = DateTime.Now;
+                user.RefreshTokenExpiryTime = DateTime.UtcNow.AddMinutes(30);
+                user.LastLoginDate =DateTime.UtcNow;
                 
                 user.LoginCount++;
                 await _userManager.UpdateAsync(user);
