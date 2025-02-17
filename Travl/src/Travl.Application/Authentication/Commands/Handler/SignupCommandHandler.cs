@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travl.Application.Common;
 using Travl.Application.Interfaces;
+using Travl.Application.IRepositories;
 using Travl.Domain.Commons;
 using Travl.Domain.Context;
 using Travl.Domain.Entities;
@@ -28,8 +29,9 @@ namespace Travl.Application.Authentication.Commands.Handler
         private readonly ILogger<SignupCommandHandler> _logger;
         private readonly IStringHashingService _hashingToken;
         private readonly IConfiguration _configuration;
+        private readonly IDriverRepository _driverRepository;
         public SignupCommandHandler(ApplicationContext context, IValidator<SignupCommand> validator, UserManager<AppUser> userManager, IEmailService emailService,
-            ITokenService tokenService, ILogger<SignupCommandHandler> logger, IStringHashingService hashingToken, IConfiguration configuration)
+            ITokenService tokenService, ILogger<SignupCommandHandler> logger, IStringHashingService hashingToken, IConfiguration configuration, IDriverRepository driverRepository)
         {
             _context = context;
             _validator = validator;
@@ -39,6 +41,7 @@ namespace Travl.Application.Authentication.Commands.Handler
             _logger = logger;
             _hashingToken = hashingToken;
             _configuration = configuration;
+            _driverRepository = driverRepository;
         }
 
         public async Task<ApiResponse<Guid>> Handle(SignupCommand request, CancellationToken cancellationToken)
@@ -92,13 +95,31 @@ namespace Travl.Application.Authentication.Commands.Handler
             try
             {
                 // send verification mail / sms
-                var sendEmail = await _emailService.SendOtpVerificationEmailAsync(request.emailAddress, request.firstName, otp, otpExpiry.ToString());
-                await _context.Users.AddAsync(newAppUser);
-                await _context.SaveChangesAsync();
+                 var sendEmail = await _emailService.SendOtpVerificationEmailAsync(request.emailAddress, request.firstName, otp, otpExpiry.ToString());
+
+                using var transactions = await _context.Database.BeginTransactionAsync();
+                try
+                {
+
+                    await _context.Users.AddAsync(newAppUser);
+                    await _context.SaveChangesAsync();
+
+                    // Create driver profile for user whose role is driver
+                    if (newAppUser.UserType == UserType.Driver)
+                        await _driverRepository.CreateDriverProfile(newAppUser);
+
+                    await transactions.CommitAsync();
+                }
+                catch (Exception ex)
+                {
+                    await transactions.RollbackAsync();
+                    _logger.LogError($"An error occured here: {ex.Message}");
+                    throw;
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"An error occured here: {ex.Message}");
+                _logger.LogError($"An error occured here while trying to create driver: {ex.Message}");
                 throw;
             }
 
