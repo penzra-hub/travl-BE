@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using Travl.Application.DTOs;
 using Travl.Domain.Entities;
 using MediatR;
 using Travl.Application.Password.Commands;
