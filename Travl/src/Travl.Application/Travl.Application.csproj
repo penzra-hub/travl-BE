@@ -7,17 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Authentication\Registration\" />
-    <Folder Include="Users\Commands\" />
+    <Compile Remove="Authentication\Registration\**" />
+    <EmbeddedResource Remove="Authentication\Registration\**" />
+    <None Remove="Authentication\Registration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Authentication\Queries\Handler\" />
+    <Folder Include="Authentication\Queries\QueryValidators\" />
+    <Folder Include="Drivers\Commands\CommandValidators\" />
+    <Folder Include="Drivers\Queries\QueryValidators\" />
+    <Folder Include="Users\Commands\Handlers\" />
+    <Folder Include="Users\Commands\CommandValidators\" />
+    <Folder Include="Users\Queries\QueryValidators\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AspNetCoreHero.Results" Version="1.1.1" />
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.27.3" />
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
   </ItemGroup>
 

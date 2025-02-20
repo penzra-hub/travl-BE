@@ -11,5 +11,6 @@ namespace Travl.Application.Interfaces
         Task<LoginDetails> DecodeRefreshToken(string refreshToken);
         Task<RefreshToken> GenerateRefreshToken(string userName, string password);
 
+        string GenerateOtp(int length = 6);
     }
 }

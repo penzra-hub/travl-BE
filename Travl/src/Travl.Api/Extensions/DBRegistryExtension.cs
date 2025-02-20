@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Travl.Domain.Context;
 
 namespace Travl.Api.Extensions
@@ -9,7 +11,20 @@ namespace Travl.Api.Extensions
         {
             services.AddDbContextPool<ApplicationContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+                var dbProvider = configuration.GetValue<string>("DatabaseProvider")?.ToLower();
+
+                if (dbProvider == "postgres")
+                {
+                    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+                }
+                else if (dbProvider == "sqlserver")
+                {
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+                }
+                else
+                {
+                    throw new Exception("DatabaseProvider must be specified as 'postgres' or 'sqlserver'.");
+                }
             });
         }
     }

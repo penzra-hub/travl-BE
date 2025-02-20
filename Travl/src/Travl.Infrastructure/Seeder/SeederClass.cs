@@ -83,7 +83,7 @@ namespace Travl.Infrastructure.Seeder
                             UserType = UserType.Driver
                         };
                         await userManager.CreateAsync(driverUser, "Password@123");
-                        await userManager.AddToRoleAsync(driverUser, Policies.DriverManager);
+                        await userManager.AddToRoleAsync(driverUser, Policies.Driver);
 
                         var driver = new Driver
                         {
@@ -112,7 +112,7 @@ namespace Travl.Infrastructure.Seeder
                             UserType = UserType.Passenger
                         };
                         await userManager.CreateAsync(passengerUser, "Password@123");
-                        await userManager.AddToRoleAsync(passengerUser, Policies.Admin);
+                        await userManager.AddToRoleAsync(passengerUser, Policies.Passenger);
 
                         var passenger = new Passenger
                         {

@@ -88,7 +88,11 @@ namespace Travl.Infrastructure.Implementations
             try
             {
                 using var smtp = new SmtpClient();
-                await smtp.ConnectAsync(_configuration["MailSettings:Host"], int.Parse(_configuration["MailSettings:Port"]), SecureSocketOptions.StartTls);
+                var host = _configuration["MailSettings:Host"];
+                var port = int.Parse(_configuration["MailSettings:Port"]!);
+                await smtp.ConnectAsync(host, port, SecureSocketOptions.Auto);
+                //await smtp.ConnectAsync(host, port, SecureSocketOptions.SslOnConnect);
+                //await smtp.ConnectAsync(host, port, SecureSocketOptions.StartTls);
                 await smtp.AuthenticateAsync(_configuration["MailSettings:UserName"], _configuration["MailSettings:Password"]);
                 await smtp.SendAsync(email);
                 await smtp.DisconnectAsync(true);
@@ -177,7 +181,7 @@ namespace Travl.Infrastructure.Implementations
                 {
                     ToEmail = cusEmail,
                     Body = emailBody,
-                    Subject = "Complete your email verification for Lengoal"
+                    Subject = "Complete your email verification for Travl"
                 };
                 return await SendEmail(email);
             }
@@ -199,7 +203,7 @@ namespace Travl.Infrastructure.Implementations
                 {
                     ToEmail = cusEmail,
                     Body = emailBody,
-                    Subject = "Reset Your Password for Lengoal"
+                    Subject = "Reset Your Password for Travl"
                 };
                 return await SendEmail(email);
             }
@@ -240,7 +244,7 @@ namespace Travl.Infrastructure.Implementations
                 {
                     ToEmail = toEmail,
                     Body = emailBody,
-                    Subject = "Complete your email verification for Lengoal"
+                    Subject = "Complete your email verification for Travl"
                 };
                 return await SendEmail(email);
             }
@@ -284,7 +288,7 @@ namespace Travl.Infrastructure.Implementations
                     Subject = "Verify your account with Travl"
                 };
                 return await SendEmail(email);
-            }
+            } 
             catch (Exception ex)
             {
                 return false;
