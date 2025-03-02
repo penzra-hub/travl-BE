@@ -26,7 +26,7 @@ namespace Travl.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("request-password-reset")]
+        [HttpPost("request-password-reset-link")]
         public async Task<IActionResult> ResetPassword([FromBody] RequestPasswordResetCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
