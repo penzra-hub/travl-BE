@@ -40,7 +40,14 @@ public class RequestPasswordResetCommandHandler : IRequestHandler<RequestPasswor
             return Result.Fail("Failed to generate link");
         }
         
-        var resetLink = $"https://localhost:7235/reset-password?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(user.Email)}";
+        var webUrl = _configuration["AppSettings:WebUrl"];
+        if (string.IsNullOrEmpty(webUrl))
+        {
+            _logger.LogError("The Web Url is not set in the appsettings.json file");
+            return Result.Fail("Password reset service is currently unavailable.");
+        }
+        
+        var resetLink = $"{webUrl}/reset-password?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(user.Email)}";
 
         await _emailService.SendPasswordResetEmailAsync(user.Email, user.FirstName, token, "180");
         
