@@ -43,7 +43,6 @@ public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand,
         }
         
         await _emailService.SendPasswordResetSuccess(user.Email,user.FirstName);
-        await _userManager.UpdateAsync(user);
         
         return await Result<string>.SuccessAsync( "Password has been reset successfully.");
         
