@@ -8,6 +8,7 @@ using MimeKit;
 using Travl.Application.Interfaces;
 using Travl.Domain.Commons;
 using Travl.Domain.Entities;
+using Travl.Domain.Enums;
 using Travl.Infrastructure.Utility;
 
 namespace Travl.Infrastructure.Implementations
@@ -192,13 +193,13 @@ namespace Travl.Infrastructure.Implementations
         }
 
         // 3. SendPasswordResetEmailAsync (Implemented previously)
-        public async Task<bool> SendPasswordResetEmailAsync(string cusEmail, string cusFirstName, string token, string expiryDuration)
+        public async Task<bool> SendPasswordResetEmailAsync(string cusEmail, string cusFirstName, string token, string expiryDuration, TimeFormat timeFormat)
         {
             try
             {
                 var user = InitializeUserAsync(cusEmail);
                 string resetLink = $"{_appSettings.WebUrl}/reset-password?email={cusEmail}";
-                var emailBody = EmailTemplate.PasswordResetTemplate(cusFirstName, resetLink, expiryDuration);
+                var emailBody = EmailTemplate.PasswordResetTemplate(cusFirstName, resetLink, expiryDuration, timeFormat);
                 var email = new EmailVm
                 {
                     ToEmail = cusEmail,

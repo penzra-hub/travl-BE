@@ -37,7 +37,7 @@ namespace Travl.Api.Extensions
                 "/api/v1/HealthCheck/WelcomeEmailTest",
                 "/api/v1/Authentication/request-activation-token",
                 "/api/v1/Authentication/activate-account",
-                "/api/v1/Password/request-password-reset-link"
+                "/api/v1/Authentication/request-password-reset-link"
             };
 
             if (allowedRoutes.Contains(context.Request.Path))

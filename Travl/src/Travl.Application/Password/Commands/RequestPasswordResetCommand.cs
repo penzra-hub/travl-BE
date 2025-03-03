@@ -3,4 +3,4 @@ using MediatR;
 
 namespace Travl.Application.Password.Commands;
 
-public record RequestPasswordResetCommand(string Email) : IRequest<IResult>;
+public record RequestPasswordResetCommand(string Email) : IRequest<IResult<string>>;

@@ -5,53 +5,45 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Travl.Application.Interfaces;
 using Travl.Domain.Entities;
-using IResult = AspNetCoreHero.Results.IResult;
+using Travl.Domain.Enums;
 
 namespace Travl.Application.Password.Commands.Handlers;
 
-public class RequestPasswordResetCommandHandler : IRequestHandler<RequestPasswordResetCommand, IResult>
+public class RequestPasswordResetCommandHandler : IRequestHandler<RequestPasswordResetCommand, IResult<string>>
 {
     private readonly UserManager<AppUser> _userManager;
     private readonly ILogger<RequestPasswordResetCommandHandler> _logger;
-    private readonly IConfiguration _configuration;
     private readonly IEmailService _emailService;
+    private readonly int ExpirationTimeInHours = 3;
 
-    public RequestPasswordResetCommandHandler(UserManager<AppUser> userManager, ILogger<RequestPasswordResetCommandHandler> logger,
-        IConfiguration configuration, IEmailService emailService)
+    public RequestPasswordResetCommandHandler(UserManager<AppUser> userManager, ILogger<RequestPasswordResetCommandHandler> logger, IEmailService emailService)
     {
         _userManager = userManager;
         _logger = logger;
-        _configuration = configuration;
         _emailService = emailService;
     }
 
-    public async Task<IResult> Handle(RequestPasswordResetCommand request, CancellationToken cancellationToken)
+    public async Task<IResult<string>> Handle(RequestPasswordResetCommand request, CancellationToken cancellationToken)
     {
         var user = await _userManager.FindByEmailAsync(request.Email);
         if (user == null)
         {
-            _logger.LogWarning("Forgot password request: User with email {Email} was not found", request.Email);
-            return Result.Fail("If the email exists, a password reset link will be sent to your email.");
+            _logger.LogWarning("Password reset request: User with email {Email} was not found", request.Email);
+            return await Result<string>.FailAsync("If the email exists in our system, you will receive a password reset link shortly.");
         }
-        
+
         var token = await _userManager.GeneratePasswordResetTokenAsync(user);
         if (token == null)
         {
-            return Result.Fail("Failed to generate link");
+            return await Result<string>.FailAsync("Failed to generate password reset link. Please try again later.");
         }
-        
-        var webUrl = _configuration["AppSettings:WebUrl"];
-        if (string.IsNullOrEmpty(webUrl))
-        {
-            _logger.LogError("The Web Url is not set in the appsettings.json file");
-            return Result.Fail("Password reset service is currently unavailable.");
-        }
-        
-        var resetLink = $"{webUrl}/reset-password?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(user.Email)}";
 
-        await _emailService.SendPasswordResetEmailAsync(user.Email, user.FirstName, token, "180");
-        
-        return Result.Success("Password reset link has been sent to your email.");
+        await _emailService.SendPasswordResetEmailAsync(user.Email, user.FirstName, token, ExpirationTimeInHours.ToString(), TimeFormat.Hour);
+
+        user.Token = token;
+        await _userManager.UpdateAsync(user);
+
+        return await Result<string>.SuccessAsync(token, "A password reset link has been sent to your email address. Please check your inbox.");
     }
-    
+
 }
