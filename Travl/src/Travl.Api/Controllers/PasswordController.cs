@@ -22,9 +22,14 @@ namespace Travl.Api.Controllers
         public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
-          
+            
+        }
 
-        
+        [AllowAnonymous]
+        [HttpPost("request-password-reset-link")]
+        public async Task<IActionResult> ResetPassword([FromBody] RequestPasswordResetCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
         }
     }
 }
