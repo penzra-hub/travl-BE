@@ -85,5 +85,15 @@ namespace Travl.Api.Controllers
         {
             return await Initiate(() => Mediator.Send(command));
         }
+        
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordCommand command)
+        {
+            return await Initiate(() => _mediator.Send(command));
+        }
+
     }
 }
