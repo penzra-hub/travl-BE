@@ -5,48 +5,52 @@ using Microsoft.Extensions.Logging;
 using Travl.Application.Interfaces;
 using Travl.Domain.Entities;
 
-namespace Travl.Application.Password.Commands.Handlers;
-
-public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand,IResult<string>>
+namespace Travl.Application.Password.Commands.Handlers
 {
-    private readonly UserManager<AppUser> _userManager;
-    private readonly ILogger<ResetPasswordCommandHandler> _logger;
-    private readonly IEmailService _emailService;
-
-    public ResetPasswordCommandHandler(UserManager<AppUser> userManager, ILogger<ResetPasswordCommandHandler> logger, IEmailService emailService)
+    public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand, IResult<string>>
     {
-        _userManager = userManager;
-        _logger = logger;
-        _emailService = emailService;
-    }
+        private readonly UserManager<AppUser> _userManager;
+        private readonly ILogger<ResetPasswordCommandHandler> _logger;
+        private readonly IEmailService _emailService;
 
-    public async Task<IResult<string>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
-    {
-        var user = await _userManager.FindByEmailAsync(request.Email);
-        if (user == null)
+        public ResetPasswordCommandHandler(UserManager<AppUser> userManager, ILogger<ResetPasswordCommandHandler> logger, IEmailService emailService)
         {
-            _logger.LogWarning("Reset password request: User with email {Email} not found}", request.Email);
-            return await Result<string>.FailAsync("Invalid request.");
+            _userManager = userManager;
+            _logger = logger;
+            _emailService = emailService;
         }
 
-        if (request.NewPassword != request.ConfirmPassword)
+        public async Task<IResult<string>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
         {
-            return await Result<string>.FailAsync("Passwords do not match");
+            var user = await _userManager.FindByEmailAsync(request.Email);
+            if (user == null)
+            {
+                _logger.LogWarning("Reset password request: User with email {Email} not found}", request.Email);
+                return await Result<string>.FailAsync("Invalid request.");
+            }
+
+            if (user.Token != request.Token || user.TokenExpirationTime < DateTime.UtcNow)
+            {
+                _logger.LogWarning("Reset password request: Invalid Token or Token has expired for user {Email}", request.Email);
+                return await Result<string>.FailAsync("Invalid Token or Token has expired");
+            }
+
+            if (request.NewPassword != request.ConfirmPassword)
+            {
+                return await Result<string>.FailAsync("Passwords do not match");
+            }
+
+            var resetResult = await _userManager.ResetPasswordAsync(user, request.Token, request.NewPassword);
+            if (!resetResult.Succeeded)
+            {
+                var errors = string.Join(", ", resetResult.Errors.Select(e => e.Description));
+                _logger.LogError("Reset password failed: {Errors}", errors);
+                return await Result<string>.FailAsync("Password reset failed");
+            }
+
+            await _emailService.SendPasswordResetSuccess(user.Email, user.FirstName);
+
+            return await Result<string>.SuccessAsync("Password has been reset successfully.");
         }
-        
-        var resetResult = await _userManager.ResetPasswordAsync(user, request.Token, request.NewPassword);
-        if (!resetResult.Succeeded)
-        {
-            var errors = string.Join(", ", resetResult.Errors.Select(e => e.Description));
-            _logger.LogError("Reset password failed: {Errors}", errors);
-            return await Result<string>.FailAsync("Password reset failed");
-        }
-        
-        await _emailService.SendPasswordResetSuccess(user.Email,user.FirstName);
-        
-        return await Result<string>.SuccessAsync( "Password has been reset successfully.");
-        
-        
     }
-    
 }

@@ -23,6 +23,7 @@ namespace Travl.Domain.Entities
         public DateTime LastLoginDate { get; set; }
         [MaxLength(2048)]
         public string? Token { get; set; }
+        public DateTime TokenExpirationTime { get; set; }
         public bool IsTokenValid { get; set; }
         public AccessLevel AccessLevel { get; set; } = AccessLevel.User;
         public string AccessLevelDesc => AccessLevel.ToString();

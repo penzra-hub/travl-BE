@@ -41,6 +41,7 @@ public class RequestPasswordResetCommandHandler : IRequestHandler<RequestPasswor
         await _emailService.SendPasswordResetEmailAsync(user.Email, user.FirstName, token, ExpirationTimeInHours.ToString(), TimeFormat.Hour);
 
         user.Token = token;
+        user.TokenExpirationTime = DateTime.UtcNow.AddHours(ExpirationTimeInHours);
         await _userManager.UpdateAsync(user);
 
         return await Result<string>.SuccessAsync(token, "A password reset link has been sent to your email address. Please check your inbox.");
