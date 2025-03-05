@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using Travl.Application.Authentication.Commands;
+using Travl.Application.Password.Commands;
 
 namespace Travl.Api.Controllers
 {
@@ -70,5 +71,29 @@ namespace Travl.Api.Controllers
         {
             return await Initiate(() => Mediator.Send(new LogoutCommand()));
         }
+
+        [HttpPost("update-password")]
+        public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
+
+        }
+
+        [AllowAnonymous]
+        [HttpPost("request-password-reset-link")]
+        public async Task<IActionResult> ResetPassword([FromBody] RequestPasswordResetCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
+        }
+        
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordCommand command)
+        {
+            return await Initiate(() => _mediator.Send(command));
+        }
+
     }
 }

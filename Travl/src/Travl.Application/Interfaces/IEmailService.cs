@@ -1,4 +1,5 @@
 ﻿using Travl.Domain.Commons;
+using Travl.Domain.Enums;
 
 namespace Travl.Application.Interfaces
 {
@@ -13,7 +14,7 @@ namespace Travl.Application.Interfaces
         Task<bool> SendOTPMail(string cusEmail, string cusFirstName, string otp, string expirationTime);
         Task<bool> SendEmailVerificationAsync(string toEmail, string cusFirstName, string otp, string expiryDuration);
         Task<bool> SendWelcomeEmailAsync(string cusEmail, string cusFirstName);
-        Task<bool> SendPasswordResetEmailAsync(string cusEmail, string cusFirstName, string token, string expiryDuration);
+        Task<bool> SendPasswordResetEmailAsync(string cusEmail, string cusFirstName, string token, string expiryDuration, TimeFormat timeFormat);
         Task<bool> SendPasswordResetSuccess(string cusEmail, string cusFirstName);
         Task<bool> SendOtpVerificationEmailAsync(string toEmail, string cusFirstName, string otp, string expiryDuration);
         Task<bool> SendContactUsInternalEmailAsync(string toEmail, string userName, string userEmail, string userNumber, string userMessage);

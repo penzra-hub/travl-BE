@@ -1,4 +1,6 @@
-﻿namespace Travl.Infrastructure.Utility
+﻿using Travl.Domain.Enums;
+
+namespace Travl.Infrastructure.Utility
 {
     public static class EmailTemplate
     {
@@ -193,13 +195,13 @@
 
 
         // 3. Password Reset Template
-        public static string PasswordResetTemplate(string cusFirstName, string resetLink, string expiryDuration)
+        public static string PasswordResetTemplate(string cusFirstName, string resetLink, string expiryDuration, TimeFormat timeformat)
         {
             string body = $@"
                     <p>Hello {cusFirstName},</p>
                     <p>We received a request to rest the password for your Travl account. To reset your password, please click on the link below:</p>
                     <p><a href='{resetLink}'>Reset Password</a></p>
-                    <p>This reset link is valid for {expiryDuration} minutes. If you did not request this, please contact our support team immediately.</p>
+                    <p>This reset link is valid for {expiryDuration} {timeformat.ToString().ToLower()}(s). If you did not request this, please contact our support team immediately.</p>
                     <p>Best regards,<br />Travl Team</p>";
             return GenerateEmailTemplate("Reset Your Password for Travl", body);
         }
