@@ -20,13 +20,15 @@ namespace Travl.Application.Drivers.Commands.Handlers
         private readonly IDriverRepository _driverRepository;
         private readonly IRepositoryBase<Vehicle> _repository;          
         private readonly ICurrentUserService _currentUser;
+        private readonly ICloudinaryService _cloudinaryService;
 
 
-        public AssignVehicleToDriverCommandHandler(IDriverRepository driverRepository, IRepositoryBase<Vehicle> repository, ICurrentUserService currentUser)
+        public AssignVehicleToDriverCommandHandler(IDriverRepository driverRepository, IRepositoryBase<Vehicle> repository, ICurrentUserService currentUser, ICloudinaryService cloudinaryService)
         {
             _driverRepository = driverRepository;
             _repository = repository;
             _currentUser = currentUser;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<IResult<string>> Handle(AssignVehicleToDriverCommand request, CancellationToken cancellationToken)
@@ -42,6 +44,22 @@ namespace Travl.Application.Drivers.Commands.Handlers
             if (!driverResult.Succeeded) 
                 return Result<string>.Fail("Driver not found.");
 
+
+            // Upload vehicle images to cloudinary
+            var vehicleDocuments = new List<string>();
+
+            foreach (var image in request.VehicleDocumentUrl)
+            {
+                var uploadResult = await _cloudinaryService.AddPhotoAsync(image);
+
+                if (uploadResult == null || string.IsNullOrEmpty(uploadResult.Uri.ToString()))
+                {
+                    return Result<string>.Fail("An error occured while trying to upload the Document image");
+                }
+
+                vehicleDocuments.Add(uploadResult.ToString());
+            }
+
             var driver = driverResult.Data;
 
             var vehicle = new Vehicle()
@@ -52,9 +70,10 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 Model = request.Model,
                 LicensePlateNo = request.LicensePlateNo,
                 Color = request.Color,
+                Year = DateOnly.Parse(request.Year),
                 EngineNumber = request.EngineNumber,
                 CreatedBy = driver?.AppUser?.Name,
-                VehicleDocumentUrl = request.VehicleDocumentUrl
+                VehicleDocumentUrl = vehicleDocuments
             };
 
             var result = await _repository.AddAsync(vehicle);
