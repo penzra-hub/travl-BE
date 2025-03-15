@@ -24,10 +24,16 @@ namespace Travl.Api.Controllers
         {
             var query = new GetDriverForPassengerQuery()
             {
-                driverId = driverId
+                DriverId = driverId
             };
             return await Initiate(() => Mediator.Send(query));
 
+        }
+
+        [HttpPut("set-availability")]
+        public async Task<IActionResult> SetAvailability([FromBody] SetDriverAvailablityCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
         }
 
 
