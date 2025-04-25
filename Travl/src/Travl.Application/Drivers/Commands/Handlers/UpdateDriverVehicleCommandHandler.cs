@@ -19,12 +19,14 @@ namespace Travl.Application.Drivers.Commands.Handlers
         private readonly ICurrentUserService _currentUserService;
         private readonly IRepositoryBase<Vehicle> _repository;
         private readonly IDriverRepository _driverRepository;
+        private readonly ICloudinaryService _cloudinaryService;
 
-        public UpdateDriverVehicleCommandHandler(ICurrentUserService currentUserService, IRepositoryBase<Vehicle> repository, IDriverRepository driverRepository)
+        public UpdateDriverVehicleCommandHandler(ICurrentUserService currentUserService, IRepositoryBase<Vehicle> repository, IDriverRepository driverRepository, ICloudinaryService cloudinaryService)
         {
             _currentUserService = currentUserService;
             _repository = repository;
             _driverRepository = driverRepository;
+            _cloudinaryService = cloudinaryService;
         }
 
         public async Task<IResult> Handle(UpdateDriverVehicleCommand request, CancellationToken cancellationToken)
@@ -48,14 +50,47 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 return Result.Fail("Vehicle not found");
             }
 
-            vehicle.Model = request.Model ?? vehicle.Model;
-            vehicle.LicensePlateNo = request.LicensePlateNo ?? vehicle.LicensePlateNo;
-            vehicle.Color = request.Color ?? vehicle.Color;
-            vehicle.EngineNumber = request.EngineNumber ?? vehicle.EngineNumber;
+            vehicle.Model = request.VehicleDto.Model ?? vehicle.Model;
+            vehicle.LicensePlateNo = request.VehicleDto.LicensePlateNo ?? vehicle.LicensePlateNo;
+            vehicle.Color = request.VehicleDto.Color ?? vehicle.Color;
+            vehicle.EngineNumber = request.VehicleDto.EngineNumber ?? vehicle.EngineNumber;
             vehicle.UpdatedBy = driver?.AppUser?.Name;
-            vehicle.VehicleDocumentUrl = request.VehicleDocumentUrl ?? vehicle.VehicleDocumentUrl;
-            //vehicle.Year = request.Year ?? vehicle.Year; 
+            vehicle.Year = !string.IsNullOrEmpty(request.VehicleDto.Year) 
+                ? DateOnly.Parse(request.VehicleDto.Year) : vehicle.Year; 
 
+
+            // Upload vehicle images to cloudinary if any
+            if (request.VehicleDto.VehicleDocumentUrl.Count > 0 || request.VehicleDto.VehicleDocumentUrl.Any())
+            {
+                var vehicleDocuments = new List<string>();
+
+                for (int i = 0; i < request.VehicleDto.VehicleDocumentUrl.Count; i++)
+                {
+                    var uploadResult = await _cloudinaryService.AddPhotoAsync(request.VehicleDto.VehicleDocumentUrl[i]);
+
+                    if (uploadResult == null || string.IsNullOrEmpty(uploadResult.Uri.ToString()))
+                    {
+                        return Result<string>.Fail("An error occured while trying to upload the Document image");
+                    }
+
+                    vehicleDocuments.Add(uploadResult.ToString());
+                }
+
+                // Delete previous vehicle images from cloudinary
+                if (vehicle.VehicleDocumentUrl.Any())
+                {
+                    foreach (var document in vehicle.VehicleDocumentUrl)
+                    {
+                        var deletionResult = await _cloudinaryService.DeletePhotoAsync(document);
+                    }
+
+                }
+
+                // Update vehicle images with the new ones
+                vehicle.VehicleDocumentUrl = vehicleDocuments;
+            }
+
+            // update vehicle in the database
             var result = await _repository.UpdateAsync(vehicle);
 
             if (!result.Succeeded) 
