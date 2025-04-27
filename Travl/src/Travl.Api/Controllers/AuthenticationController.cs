@@ -15,7 +15,7 @@ namespace Travl.Api.Controllers
         public AuthenticationController(IMediator mediator)
         {
             _mediator = mediator;
-        } 
+        }
 
         [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
@@ -27,7 +27,6 @@ namespace Travl.Api.Controllers
             return Ok(signUp);
         }
 
-        [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("login")]
@@ -36,7 +35,6 @@ namespace Travl.Api.Controllers
             return await Initiate(() => Mediator.Send(command));
         }
 
-        [Authorize]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("refresh-token")]
@@ -45,7 +43,6 @@ namespace Travl.Api.Controllers
             return await Initiate(() => Mediator.Send(command));
         }
 
-        [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("activate-account")]
@@ -54,7 +51,6 @@ namespace Travl.Api.Controllers
             return await Initiate(() => Mediator.Send(command));
         }
 
-        [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("request-activation-token")]
@@ -63,7 +59,6 @@ namespace Travl.Api.Controllers
             return await Initiate(() => Mediator.Send(command));
         }
 
-        [Authorize]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("logout")]
@@ -85,7 +80,7 @@ namespace Travl.Api.Controllers
         {
             return await Initiate(() => Mediator.Send(command));
         }
-        
+
         [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
