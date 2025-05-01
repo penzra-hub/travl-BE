@@ -11,6 +11,7 @@ using Travl.Application.Dtos.DriverDto;
 using Travl.Application.Interfaces;
 using Travl.Infrastructure.Implementations;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Travl.Api.Controllers
 {
@@ -41,6 +42,12 @@ namespace Travl.Api.Controllers
         public async Task<IActionResult> UpdateDriver([FromForm] UpdateDriverBasicDetailsCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
+        }
+
+        [HttpGet("assigned-trips")]
+        public async Task<IActionResult> GetAssignedTrips()
+        {
+            return await Initiate(() => Mediator.Send(new GetAssignedTripsQuery()));
         }
     }
 }

@@ -9,8 +9,7 @@ using Travl.Application.Dtos.DriverDto;
 
 namespace Travl.Application.Drivers.Queries
 {
-    public class GetDriverForPassengerQuery : IRequest<IResult<GetDriverDto>>
+    public class GetDriversForAdminQuery : IRequest<IResult<IEnumerable<DriverDetailDto>>>
     {
-        public string DriverId { get; set; }
     }
 }
