@@ -1,20 +1,13 @@
 ﻿using AspNetCoreHero.Results;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Travl.Domain.Entities;
-using Travl.Domain.Enums;
 
 namespace Travl.Application.Drivers.Commands
 {
     public class AssignVehicleToDriverCommand : IRequest<IResult<string>>
     {
-        [Required] 
+        [Required]
         public string Model { get; set; }
         [Required] public string LicensePlateNo { get; set; }
         [Required] public string Color { get; set; }

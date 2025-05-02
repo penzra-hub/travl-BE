@@ -3,11 +3,6 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Travl.Application.Interfaces;
 using Travl.Domain.Commons;
 using Travl.Domain.Context;
@@ -39,7 +34,7 @@ namespace Travl.Application.Authentication.Commands.Handler
         public async Task<IResult<ApiResponse<string>>> Handle(RequestActivationTokenCommand request, CancellationToken cancellationToken)
         {
             var checkUser = await _userManager.FindByEmailAsync(request.email);
-            if(checkUser == null || checkUser.FirstName == null)
+            if (checkUser == null || checkUser.FirstName == null)
             {
                 return await Result<ApiResponse<string>>.FailAsync($"User with email: {request.email} does not exist!");
             }

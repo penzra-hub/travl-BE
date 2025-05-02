@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Travl.Application.Users.Queries;
 using Travl.Application.Users.Queries.GetAllUsers;
 using Travl.Domain.Enums;
@@ -7,9 +6,6 @@ using Travl.Infrastructure.Utility;
 
 namespace Travl.Api.Controllers
 {
-    [Authorize]
-    [Route("api/[controller]")]
-    [ApiController]
     public class UsersController : ApiController
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
