@@ -18,14 +18,20 @@ namespace Travl.Api.Controllers
 
         }
 
-        [HttpPut("update-driver")]
+        [HttpPut("update")]
         public async Task<IActionResult> UpdateDriver([FromForm] UpdateDriverBasicDetailsCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
         }
 
-        [HttpPost("CompleteDriverProfile")]
+        [HttpPost("submit-activation-request")]
         public async Task<IActionResult> SubmitVerification([FromForm] SubmitDriverVerificationCommand command)
+        {
+            return await Initiate(() => Mediator.Send(command));
+        }
+
+        [HttpPost("vehicle/submit-activation-request")]
+        public async Task<IActionResult> AssignVehicle([FromForm] SubmitVehicleActivationCommand command)
         {
             return await Initiate(() => Mediator.Send(command));
         }

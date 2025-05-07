@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Travl.Application.Drivers.Commands
 {
-    public class AssignVehicleToDriverCommand : IRequest<IResult<string>>
+    public class SubmitVehicleActivationCommand : IRequest<IResult<string>>
     {
         [Required]
         public string Model { get; set; }

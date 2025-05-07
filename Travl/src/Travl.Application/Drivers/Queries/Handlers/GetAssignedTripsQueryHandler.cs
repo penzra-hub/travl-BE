@@ -51,10 +51,10 @@ namespace Travl.Application.Drivers.Queries.Handlers
             //}
 
             // If not cached, fetch from database and store in Redis
-            var trips = driver.Data.AssignedTrips;
+            var trips = driver.Data.Rides;
             //await _cacheService.SetAsync(cacheKey, trips, TimeSpan.FromMinutes(10));
 
-            return Result<List<Ride>>.Success(trips);
+            return Result<List<Ride>>.Success();
         }
     }
 }

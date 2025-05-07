@@ -78,7 +78,7 @@ namespace Travl.Infrastructure.Repositories
             {
                 Id = Guid.NewGuid().ToString(),
                 AppUserId = user.Id,
-                Status = Status.Active,
+                Status = Status.Inactive,
                 VerificationStatus = VerificationStatus.Pending,
                 CreatedAt = DateTime.UtcNow,
             };
