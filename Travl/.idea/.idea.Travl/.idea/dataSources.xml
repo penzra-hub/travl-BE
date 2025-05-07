@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="travldb_8no4@dpg-d04vujbe5dus738ooi8g-a.oregon-postgres.render.com" uuid="05ce968c-94ee-4c55-a03f-56f0baff12ba">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dpg-d04vujbe5dus738ooi8g-a.oregon-postgres.render.com:5432/travldb_8no4?password=L3JlYmrnG7Me2bGcSadhEOLv1NtrLNPL&amp;sslmode=Require&amp;user=travldev</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
