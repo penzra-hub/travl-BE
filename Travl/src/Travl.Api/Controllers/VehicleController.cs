@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Travl.Application.Drivers.Commands;
 using Travl.Application.Drivers.Models;
+using Travl.Application.Vehicles.Queries;
 
 namespace Travl.Api.Controllers
 {
@@ -17,6 +18,13 @@ namespace Travl.Api.Controllers
         {
             var command = new UpdateDriverVehicleCommand(vehicleId, vehicleDto);
             return await Initiate(() => Mediator.Send(command));
+        }
+        
+        [HttpGet("GetVehicleById/{vehicleId}")]
+        public async Task<IActionResult> GetVehicleById(string vehicleId)
+        {
+            var query = new GetVehicleByIdQuery(vehicleId);
+            return await Initiate(() => Mediator.Send(query));
         }
     }
 }

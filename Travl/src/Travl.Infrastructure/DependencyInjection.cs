@@ -29,6 +29,7 @@ namespace Travl.Infrastructure
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddScoped<IDriverRepository, DriverRepository>();
             services.AddScoped<ICloudinaryService, CloudinaryService>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
 
             #endregion
 

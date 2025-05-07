@@ -20,6 +20,8 @@
     <Folder Include="Users\Commands\Handlers\" />
     <Folder Include="Users\Commands\CommandValidators\" />
     <Folder Include="Users\Queries\QueryValidators\" />
+    <Folder Include="Vehicles\Commands\Handlers\" />
+    <Folder Include="Vehicles\Models\" />
   </ItemGroup>
 
   <ItemGroup>
