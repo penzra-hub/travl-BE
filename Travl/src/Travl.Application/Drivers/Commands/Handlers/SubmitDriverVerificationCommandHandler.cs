@@ -23,7 +23,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
         private readonly ICloudinaryService _cloudinaryService;
         private readonly IEmailService _emailService;
 
-        public SubmitDriverVerificationCommandHandler(IRepositoryBase<UserVerification> repository, IRepositoryBase<Driver> driverRepository, ICurrentUserService currentUserService, ICloudinaryService cloudinaryService, IEmailService emailService)
+        public SubmitDriverVerificationCommandHandler(IRepositoryBase<UserVerification> repository, IDriverRepository driverRepository, ICurrentUserService currentUserService, ICloudinaryService cloudinaryService, IEmailService emailService)
         {
             _repository = repository;
             _driverRepository = driverRepository;
@@ -47,8 +47,8 @@ namespace Travl.Application.Drivers.Commands.Handlers
 
             var driver = driverResult.Data;
 
-            if (driver.VerificationStatus != VerificationStatus.Pending)
-                return Result.Fail("Driver is not verified yet");
+            if (driver.VerificationStatus == VerificationStatus.Pending)
+                return Result.Fail("Driver is not yet verified");
 
             var licenceUpload = await _cloudinaryService.AddPhotoAsync(request.LicensePhoto);
 
@@ -77,7 +77,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
 
             var email = new EmailVm
             {
-                ToEmail = "travltester@gmail.com", // Replace with your admin email or fetch dynamically
+                ToEmail = "travltester@gmail.com", // Replace with admin email
                 Subject = "New Driver Activation Request",
                 Body = $@"
                 <p>Hello Admin,</p>
@@ -88,7 +88,6 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 <br/>
                 <p>Best,<br/>Travl Team</p>"
             };
-
 
             bool isSent = await _emailService.SendEmail(email);
 
@@ -101,7 +100,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 return Result<string>.Success(licenceVerification.Id, "Driver activation request submitted, but admin notification failed.");
             }
 
-            return Result<string>.Success(licenceVerification.Id, "Driver activation request successfully assigned and admin notified.");
+            return Result<string>.Success(licenceVerification.Id, "Driver activation request successfully submitted and admin notified.");
         }
     }
 }

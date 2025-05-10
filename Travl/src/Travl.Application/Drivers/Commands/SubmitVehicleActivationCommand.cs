@@ -7,15 +7,12 @@ namespace Travl.Application.Drivers.Commands
 {
     public class SubmitVehicleActivationCommand : IRequest<IResult<string>>
     {
-        [Required]
+       
         public string Model { get; set; }
-        [Required] public string LicensePlateNo { get; set; }
-        [Required] public string Color { get; set; }
-        [Required] public string EngineNumber { get; set; }
-        [Required] public IEnumerable<IFormFile> VehicleDocumentUrl { get; set; }
-
-        [Required]
-        [RegularExpression(@"^\d{4}-\d{2}-\d{2}$", ErrorMessage = "Year must be in YYYY-MM-DD format.")]
+        public string LicensePlateNo { get; set; }
+        public string Color { get; set; }
+        public string EngineNumber { get; set; }
+        public IEnumerable<IFormFile> VehicleDocuments { get; set; }
         public string Year { get; set; }
     }
 }

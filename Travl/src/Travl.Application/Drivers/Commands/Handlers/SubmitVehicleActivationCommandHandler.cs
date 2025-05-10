@@ -1,12 +1,15 @@
 ﻿using AspNetCoreHero.Results;
 using AutoMapper;
 using Azure.Core;
+using FluentValidation;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Travl.Application.Drivers.Commands.CommandValidators;
 using Travl.Application.Interfaces;
 using Travl.Application.IRepositories;
 using Travl.Domain.Commons;
@@ -23,15 +26,18 @@ namespace Travl.Application.Drivers.Commands.Handlers
         private readonly ICurrentUserService _currentUser;
         private readonly ICloudinaryService _cloudinaryService;
         private readonly IEmailService _emailService;
+        private readonly IValidator<SubmitVehicleActivationCommand> _validator;
 
 
-        public SubmitVehicleActivationCommandHandler(IDriverRepository driverRepository, IRepositoryBase<Vehicle> repository, ICurrentUserService currentUser, ICloudinaryService cloudinaryService, IEmailService emailService)
+
+        public SubmitVehicleActivationCommandHandler(IDriverRepository driverRepository, IRepositoryBase<Vehicle> repository, ICurrentUserService currentUser, ICloudinaryService cloudinaryService, IEmailService emailService, IValidator<SubmitVehicleActivationCommand> validator)
         {
             _driverRepository = driverRepository;
             _repository = repository;
             _currentUser = currentUser;
             _cloudinaryService = cloudinaryService;
             _emailService = emailService;
+            _validator = validator;
         }
 
         public async Task<IResult<string>> Handle(SubmitVehicleActivationCommand request, CancellationToken cancellationToken)
@@ -55,9 +61,9 @@ namespace Travl.Application.Drivers.Commands.Handlers
             // Upload vehicle images to cloudinary
             var vehicleDocuments = new List<string>();
 
-            foreach (var image in request.VehicleDocumentUrl)
+            foreach (var doc in request.VehicleDocuments)
             {
-                var uploadResult = await _cloudinaryService.AddPhotoAsync(image);
+                var uploadResult = await _cloudinaryService.AddPhotoAsync(doc);
 
                 if (uploadResult == null || string.IsNullOrEmpty(uploadResult.Uri.ToString()))
                 {
@@ -76,7 +82,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 Model = request.Model,
                 LicensePlateNo = request.LicensePlateNo,
                 Color = request.Color,
-                Year = DateOnly.Parse(request.Year),
+                Year = DateOnly.Parse(request.Year,  CultureInfo.InvariantCulture),
                 EngineNumber = request.EngineNumber,
                 CreatedBy = driver?.AppUser?.Name,
                 VehicleDocumentUrl = vehicleDocuments
@@ -88,7 +94,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
 
             var email = new EmailVm
             {
-                ToEmail = "travltester@gmail.com", // Replace with your admin email or fetch dynamically
+                ToEmail = "travltester@gmail.com", // Replace with admin email
                 Subject = "New Vehicle Activation Request",
                 Body = $@"
                 <p>Hello Admin,</p>
@@ -112,7 +118,7 @@ namespace Travl.Application.Drivers.Commands.Handlers
                 return Result<string>.Success(vehicle.Id, "Vehicle submitted, but admin notification failed.");
             }
 
-            return Result<string>.Success(vehicle.Id, "Vehicle successfully assigned and admin notified.");
+            return Result<string>.Success(vehicle.Id, "Vehicle activation request successfully submitted and admin notified.");
 
         }
     }

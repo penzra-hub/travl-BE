@@ -30,19 +30,23 @@ namespace Travl.Application.Drivers.Queries.Handlers
         public async Task<IResult<List<Ride>>> Handle(GetAssignedTripsQuery request, CancellationToken cancellationToken)
         {
             var userId = _currentUserService.UserId;
+
             if (string.IsNullOrWhiteSpace(userId))
             {
                 return Result<List<Ride>>.Fail("Unauthorized. User ID not found.");
             }
 
-            var driver = await _repository.GetDriverByAppUserId(userId);
-            if (!driver.Succeeded)
+            var driverQuery = await _repository.GetDriverByAppUserId(userId);
+
+            if (!driverQuery.Succeeded)
             {
                 return Result<List<Ride>>.Fail("Driver not found.");
             }
 
+            var driver = driverQuery.Data;
+
             // Check Redis first before querying the database
-            string cacheKey = $"driver:{driver.Data.Id}:trips";
+            string cacheKey = $"driver:{driver.Id}:trips";
             //var cachedTrips = await _cacheService.GetAsync<List<Ride>>(cacheKey);
 
             //if (cachedTrips != null)
@@ -51,10 +55,12 @@ namespace Travl.Application.Drivers.Queries.Handlers
             //}
 
             // If not cached, fetch from database and store in Redis
-            var trips = driver.Data.Rides;
+            var trips = await _tripRepository.GetAllAsync();
+
+            var assignedtrips = trips.Data.Where(r => r.DriverId == driver.Id).ToList() ;
             //await _cacheService.SetAsync(cacheKey, trips, TimeSpan.FromMinutes(10));
 
-            return Result<List<Ride>>.Success();
+            return Result<List<Ride>>.Success(assignedtrips, "Drivers assigned trips successfully retrieved");
         }
     }
 }
