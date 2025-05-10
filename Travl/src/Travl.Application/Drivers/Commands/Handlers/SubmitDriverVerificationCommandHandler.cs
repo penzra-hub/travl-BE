@@ -1,5 +1,6 @@
 ﻿using AspNetCoreHero.Results;
 using Azure.Core;
+using CloudinaryDotNet.Actions;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Travl.Application.Interfaces;
 using Travl.Application.IRepositories;
+using Travl.Domain.Commons;
 using Travl.Domain.Entities;
 using Travl.Domain.Enums;
 
@@ -16,16 +18,18 @@ namespace Travl.Application.Drivers.Commands.Handlers
     public class SubmitDriverVerificationCommandHandler : IRequestHandler<SubmitDriverVerificationCommand, IResult>
     {
         private readonly IRepositoryBase<UserVerification> _repository;
-        private readonly IRepositoryBase<AppUser> _userRepository;
+        private readonly IDriverRepository _driverRepository;
         private readonly ICurrentUserService _currentUserService;
         private readonly ICloudinaryService _cloudinaryService;
+        private readonly IEmailService _emailService;
 
-        public SubmitDriverVerificationCommandHandler(IRepositoryBase<UserVerification> repository, IRepositoryBase<AppUser> userRepository, ICurrentUserService currentUserService, ICloudinaryService cloudinaryService)
+        public SubmitDriverVerificationCommandHandler(IRepositoryBase<UserVerification> repository, IDriverRepository driverRepository, ICurrentUserService currentUserService, ICloudinaryService cloudinaryService, IEmailService emailService)
         {
             _repository = repository;
-            _userRepository = userRepository;
+            _driverRepository = driverRepository;
             _currentUserService = currentUserService;
             _cloudinaryService = cloudinaryService;
+            _emailService = emailService;
         }
 
         public async Task<IResult> Handle(SubmitDriverVerificationCommand request, CancellationToken cancellationToken)
@@ -33,43 +37,70 @@ namespace Travl.Application.Drivers.Commands.Handlers
             var userId = _currentUserService.UserId;
 
             if (string.IsNullOrEmpty(userId))
-                return Result.Fail("User Id cannot be found");
+                return Result.Fail("Unathorized. User Id cannot be found");
 
-            // Confirm that the user exists
-            var user = _userRepository.FindByIdAsync(userId);
+            
+            var driverResult = await _driverRepository.GetDriverByAppUserId(userId);
 
-            if (user == null)
-                return Result.Fail("driver cannot be found");
+            if (!driverResult.Succeeded)
+                return Result<string>.Fail("Driver not found.");
 
-            // Upload document image to cloudinary
-            var documentUpload = await _cloudinaryService.AddPhotoAsync(request.DocumentImage);
+            var driver = driverResult.Data;
 
-            if (documentUpload == null)
+            if (driver.VerificationStatus == VerificationStatus.Pending)
+                return Result.Fail("Driver is not yet verified");
+
+            var licenceUpload = await _cloudinaryService.AddPhotoAsync(request.LicensePhoto);
+
+            if (licenceUpload == null)
             {
-                return Result.Fail("An error occured while trying to upload the Document image");
+                return Result.Fail("An error occured while trying to upload the licence photo");
             }
 
             // Create the new verification request
-            var verification = new UserVerification
+            var licenceVerification = new UserVerification
             {
                 Id = Guid.NewGuid().ToString(),
                 AppUserId = userId,
-                IdentificationType = request.IdentificationType,
-                IdentificationUrl = documentUpload.Uri.ToString(),
-                IdentificationNo = request.IdentificationNo,
                 LicenseNumber = request.LicenseNumber,
-                LicenseUrl = request.LicenseUrl,
-                ExpiryDate = request.ExpiryDate ?? DateTime.UtcNow.AddYears(1),
-                //VerificationStatus = VerificationStatus.Pending,
+                LicenseUrl = licenceUpload.Uri.ToString(),
+                ExpiryDate = request.ExpiryDate,
+                Status = Status.Pending,
                 CreatedBy = _currentUserService.FullName
             };
 
-            var result = await _repository.AddAsync(verification);
+            var result = await _repository.AddAsync(licenceVerification);
 
             if (!result.Succeeded) 
                 return Result.Fail($"Driver verification request failed: {result.Message}");
-            
-            return Result.Success("Driver Verification request submitted successfully");
+
+
+            var email = new EmailVm
+            {
+                ToEmail = "travltester@gmail.com", // Replace with admin email
+                Subject = "New Driver Activation Request",
+                Body = $@"
+                <p>Hello Admin,</p>
+                <p>A new driver activation request has been submitted by <strong>{driver.AppUser?.Name}</strong>.</p>
+                <p><strong>Licence:</strong> {licenceVerification.LicenseNumber} - {licenceVerification.ExpiryDate}</p>
+                <p><strong>Submitted On:</strong> {DateTime.UtcNow.ToString("f")} UTC</p>
+                <p>Please log in to the admin dashboard to review and approve this request.</p>
+                <br/>
+                <p>Best,<br/>Travl Team</p>"
+            };
+
+            bool isSent = await _emailService.SendEmail(email);
+
+            if (!isSent)
+            {
+                // Queue for retry 
+                // BackgroundJob.Schedule<IEmailService>(service =>
+                // service.SendEmail(emailVm, true), TimeSpan.FromMinutes(2));
+
+                return Result<string>.Success(licenceVerification.Id, "Driver activation request submitted, but admin notification failed.");
+            }
+
+            return Result<string>.Success(licenceVerification.Id, "Driver activation request successfully submitted and admin notified.");
         }
     }
 }

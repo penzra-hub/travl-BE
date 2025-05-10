@@ -19,7 +19,7 @@ namespace Travl.Infrastructure.Repositories
     {
         private readonly ApplicationContext _context;
 
-        public DriverRepository(ApplicationContext context) : base(context) 
+        public DriverRepository(ApplicationContext context) : base(context)
         {
             _context = context;
         }
@@ -59,7 +59,7 @@ namespace Travl.Infrastructure.Repositories
                 })
                 .FirstOrDefaultAsync();
 
-            if (driver == null) 
+            if (driver == null)
                 return await Result<GetDriverDto>.FailAsync("Driver not found");
 
             return await Result<GetDriverDto>.SuccessAsync(driver);
@@ -78,7 +78,7 @@ namespace Travl.Infrastructure.Repositories
             {
                 Id = Guid.NewGuid().ToString(),
                 AppUserId = user.Id,
-                Status = Status.Active,
+                Status = Status.Inactive,
                 VerificationStatus = VerificationStatus.Pending,
                 CreatedAt = DateTime.UtcNow,
             };
@@ -88,8 +88,47 @@ namespace Travl.Infrastructure.Repositories
             if (!result.Succeeded)
                 return Result.Fail(result.Message);
 
-            return Result.Success("Driver profile created successfully"); 
+            return Result.Success("Driver profile created successfully");
         }
 
+        public async Task<IEnumerable<DriverDetailDto>> GetAllDriversAsync()
+        {
+             
+            var drivers = await _context.Drivers
+                    .Where(d => !d.IsDeleted)
+                    .Include(u => u.AppUser)
+                    .ToListAsync();
+
+            if (!drivers.Any())
+            {
+                return new List<DriverDetailDto>();
+            }
+                       
+            return drivers.Select(d => new DriverDetailDto()
+            {
+                Id = d.Id,  
+                FullName = d.AppUser.FirstName + " " + d.AppUser.LastName,
+                Email = d.AppUser.Email,
+                PhoneNumber = d.AppUser.PhoneNumber,       
+                VerificationStatus = d.VerificationStatus,
+
+                Vehicles = (d.Vehicles ?? new List<Vehicle>())
+                .Select(v => new VehicleDto()
+                {
+                    Color = v.Color,
+                    Model = v.Model,
+                    PlateNumber = v.LicensePlateNo
+                }).ToList(),
+                
+                KycDetails = (d.UserVerification ?? new List<UserVerification>())
+                .Select(u => new UserVerificationDto()
+                {
+                    DocumentType = u.IdentificationType.ToString(),
+                    DocumentNumber = u.IdentificationNo
+                }).ToList()
+
+            }).ToList();
+        }
+       
     }
 }

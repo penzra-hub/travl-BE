@@ -55,7 +55,7 @@ namespace Travl.Application.Drivers.Queries.Handlers
                 driver = await _repository.GetDriverForAdminAsync(query.driverId);
             }*/
 
-            var result = await _repository.GetDriverForPassenger(query.driverId);
+            var result = await _repository.GetDriverForPassenger(query.DriverId);
             if (result.Succeeded) driver = result.Data;           
 
             if (driver == null)

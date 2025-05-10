@@ -80,7 +80,7 @@ namespace Travl.Infrastructure.Repositories
 
             if (data == null || !data.Any())
             {
-                return Result<IQueryable<TEntity>>.Fail("There is no entity available");
+                return Result<IQueryable<TEntity>>.Success("There is no entity available");
             }
 
             return Result<IQueryable<TEntity>>.Success(data, "Successfully retrieved all entities from the database");
