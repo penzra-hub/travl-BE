@@ -91,5 +91,86 @@ namespace Travl.Infrastructure.Repositories
             return Result.Success("Driver profile created successfully"); 
         }
 
+        public async Task<IEnumerable<DriverDetailDto>> GetAllDriversAsync()
+        {
+            var drivers = await _context.Drivers
+                .Where(d=> !d.IsDeleted)
+                .Include(u => u.AppUser)
+                .ToListAsync();
+               if(!drivers.Any())
+                {
+                    return new List<DriverDetailDto>();
+                }
+               return drivers.Select(d=> new DriverDetailDto()
+               {
+                   Id = d.Id,
+                   FullName = d.AppUser.FirstName + " " + d.AppUser.LastName,
+                   Email = d.AppUser.Email,
+                   PhoneNumber = d.AppUser.PhoneNumber,
+                   VerificationStatus = d.VerificationStatus,
+                   Vehicles = (d.Vehicles ?? new List<Vehicle>())
+                   .Select(v => new VehicleDto()
+                   {
+                       Color = v.Color,
+                       Model = v.Model,
+                       PlateNumber = v.LicensePlateNo
+                   }).ToList()
+               }).ToList();
+                
+        }
+
+        public async Task<IResult<SingleDriverDetailForAdminDto>> GetDriverForAdminAsync(string driverId)
+        {
+            var driver = await _context.Drivers
+                .Include(d => d.Vehicles)
+                .Include(d => d.UserVerification)
+                .Include(d => d.AppUser)
+                .FirstOrDefaultAsync(d => d.Id == driverId && !d.IsDeleted);
+
+            if (driver == null)
+            {
+                return await Result<SingleDriverDetailForAdminDto>.FailAsync("Driver not found.");
+            }
+            var driverDetails = new SingleDriverDetailForAdminDto
+            {
+                Id = driver.Id,
+                FullName = $"{driver.AppUser?.FirstName}{driver.AppUser?.LastName}".Trim(),
+                Email = driver.AppUser?.Email,
+                PhoneNumber = driver.AppUser?.PhoneNumber,
+                VerificationStatus = driver.VerificationStatus,
+                VerificationDate = driver.VerificationDate,
+                Status = driver.Status ?? Status.Active,
+                Vehicles = (driver.Vehicles ?? new List<Vehicle>())
+                .Select(v => new VehicleDto
+                {
+                    Color = v.Color,
+                    Model = v.Model,
+                    PlateNumber = v.LicensePlateNo
+                }).ToList(),
+                KycDetails = (driver.UserVerification ?? new List<UserVerification>())
+                .Select(uv => new UserVerificationDto
+                {
+                    DocumentType = uv.IdentificationType.ToString(),
+                    DocumentNumber = uv.IdentificationNo
+                }).ToList()
+
+            };
+            return await Result<SingleDriverDetailForAdminDto>.SuccessAsync(driverDetails, "Driver retrieved successfully.");
+        }
+
+        public async Task<IResult<Driver>> GetDriverByIdAsync(string driverId)
+        {
+            var driver = await _context.Drivers
+                .Include(d => d.Vehicles)
+                .Include(d => d.AppUser)
+                .Include(d => d.UserVerification)
+                .FirstOrDefaultAsync(d => d.Id == driverId && !d.IsDeleted);
+
+            if (driver == null)
+            {
+                return await Result<Driver>.FailAsync("Driver not found.");
+            }
+            return await Result<Driver>.SuccessAsync(driver);
+        }
     }
 }

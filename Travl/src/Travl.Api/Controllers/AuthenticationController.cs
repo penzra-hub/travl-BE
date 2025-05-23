@@ -27,6 +27,7 @@ namespace Travl.Api.Controllers
             return Ok(signUp);
         }
 
+        [AllowAnonymous]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(Result), (int)HttpStatusCode.BadRequest)]
         [HttpPost("login")]
