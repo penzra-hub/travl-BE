@@ -14,5 +14,8 @@ namespace Travl.Application.IRepositories
         Task<IResult<Driver>> GetDriverByAppUserId(string id);
         Task<IResult> CreateDriverProfile(AppUser user);
         Task<IResult<GetDriverDto>> GetDriverForPassenger(string driverId);
+        Task<IEnumerable<DriverDetailDto>> GetAllDriversAsync();
+        Task<IResult<SingleDriverDetailForAdminDto>> GetDriverForAdminAsync(string driverId);
+        Task<IResult<Driver>> GetDriverByIdAsync(string driverId);
     }
 }
